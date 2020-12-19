@@ -1,44 +1,72 @@
 package PenetrationTestingAutomatized;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.net.InetAddress;
 
 public class PenetrationTestWrapper {
-
-	private BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	private Path path;
+	private ExploitationModule exploitationModuleTool;
+	private ScanningModule scanningModuleTool;
+	private InetAddress ip;
+	private String domain;
 	
-	public PenetrationTestWrapper() {
-		//funzione per creare la cartella dove salverò l'esito del penetration test
-		try {
-			creaCartellaPenetrationTest();
-		} catch (IOException e) {
-			System.err.println("ERRORE IN I/O");
-			e.printStackTrace();
-		}
-
-	}
-
-	private void creaCartellaPenetrationTest() throws IOException{
-		// ricavo il percorso da cui viene eseguito lo script per poi creare le cartelle
-		// in cui salverò il penetration test
-		path = Paths.get(System.getProperty("user.dir")+"/PenetrationTestSalvati");
+	// **************************** COSTRUTTORI ****************************
+	
+	//costruttore con solo IP, strumenti di default (nmap e metasploit)
+	public PenetrationTestWrapper(InetAddress ip) {
+		//istanzia gli oggetti che gestiranno le varie fasi del penetration test
 		
-		String nomeCartella = "";
-		// chiedo il nome del penetration test e controllo che non sia già esistente
-		do {
-			System.out.println("Inserisci il nome del penetration test:");
-			nomeCartella = br.readLine();
-			//faccio anche sanificazione dell'input per evitare directory trasversal!
-			path = Paths.get(System.getProperty("user.dir") + "/PENETRATION_TEST_SALVATI/" + nomeCartella.replaceAll("[^a-zA-Z0-9.-]", "_"));
-		} while (Files.exists(path));
+		this.ip = ip;
+		this.scanningModuleTool = new nmapScanningTool(ip);
+		//TODO this.exploitationModuleTool = metasploit!!!
 		
-		Files.createDirectories(path);
-		System.out.println("cartella creata in questo percorso:" + path.toString());
 	}
+	
+	//costruttore con solo Dominio, strumenti di default (nmap e metasploit)
+	public PenetrationTestWrapper(String domain) {
+		//istanzia gli oggetti che gestiranno le varie fasi del penetration test
+		
+		this.domain = domain;
+		this.scanningModuleTool = new nmapScanningTool(domain);
+		//TODO this.exploitationModuleTool = metasploit!!!
+		
+	}
+	
+		
+	
+	/* TODO
+	//costruttore con parametri per decidere tool di scansione e exploit
+	public PenetrationTestWrapper(InetAddress ip, String scanningToolName, String exploitationToolName) {
+		
+	}
+	*/
+	
+	// **************************** FINE COSTRUTTORI ****************************
+
+	
+	
+	
+	
+	// **************************** METODO PER FAR PARTIRE IL PENETRATION TEST ****************************
+	
+	public void startWithIP() {
+		//avvia la scansione tramite ip
+		this.scanningModuleTool.scanIP(this.ip);
+	}
+	
+	public void startWithDomain() {
+		//avvia la scansione tramite dominio
+		this.scanningModuleTool.scanDomain(this.domain);
+	}
+	
+	// **************************** FINE METODO PER FAR PARTIRE IL PENETRATION TEST ****************************
+	
+	
+	
+	
+	
+	// **************************** METODI VARI ****************************
+	
+	
+
+	// **************************** FINE METODI VARI ****************************	
 
 }

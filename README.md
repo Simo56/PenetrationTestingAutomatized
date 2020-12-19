@@ -4,6 +4,7 @@ Automatized Penetration Test is a University project for creating a Java autonom
 
 ## Documentation
 
+You need NPCAP to use nmap
 PROVA123
 
 ## Usage
