@@ -23,6 +23,9 @@ public class nmapScanningTool implements ScanningModule{
 	// **************************** FINE COSTRUTTORI ****************************
 	
 	
+	
+	
+	
 	// **************************** METODI ****************************
 	
 	@Override
@@ -33,13 +36,13 @@ public class nmapScanningTool implements ScanningModule{
 
 	@Override
 	public void scanIP(InetAddress ip) {
-		// TODO Auto-generated method stub
+		// TODO AVVIA SCANSIONE NMAP CON IP, CREA SOTTOPROCESSO!
 		
 	}
 
 	@Override
 	public void scanDomain(String domain) {
-		// TODO Auto-generated method stub
+		// TODO AVVIA SCANSIONE NMAP CON DOMINIO, CREA SOTTOPROCESSO!
 		
 	}
 	
