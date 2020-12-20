@@ -9,8 +9,8 @@ import java.nio.file.Paths;
 
 public class GestisciFilePenetrationTest {
 	
-	//FUNZIONE PER CREARE LA CARTELLA DOVE SALVARE IL RISULTATO DEL PENETRATION TEST
-	public static void creaCartellaPenetrationTest() {
+	// ******************** FUNZIONE PER CREARE LA CARTELLA DOVE SALVARE IL RISULTATO DEL PENETRATION TEST ********************
+	public static String creaCartellaPenetrationTest() {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Path path;
@@ -23,7 +23,7 @@ public class GestisciFilePenetrationTest {
 
 		// chiedo il nome del penetration test e controllo che non sia già esistente
 		do {
-			System.out.println("Inserisci il nome del penetration test [dev'essere unico, sennò verrà richiesto!]:");
+			System.out.println("Inserisci il nome del penetration test [dev'essere unico, altrimenti verrà chiesto nuovamente!]:");
 			try {
 				nomeCartella = br.readLine();
 			} catch (IOException e) {
@@ -44,7 +44,11 @@ public class GestisciFilePenetrationTest {
 		}
 		
 		System.out.println("cartella creata in questo percorso:" + path.toString());
+		
+		return nomeCartella;
 	}
+	
+	// ******************** FINE FUNZIONE PER CREARE LA CARTELLA DOVE SALVARE IL RISULTATO DEL PENETRATION TEST ********************
 	
 	
 }

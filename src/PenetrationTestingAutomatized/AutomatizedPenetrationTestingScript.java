@@ -6,25 +6,29 @@ import java.io.InputStreamReader;
 import java.net.InetAddress;
 
 public class AutomatizedPenetrationTestingScript {
-	
+
 	// **************************** INIZIO MAIN ****************************
 	
 	public static void main(String[] args) {
 		
 		//funzione per creare la cartella dove salverò l'esito del penetration test
-		GestisciFilePenetrationTest.creaCartellaPenetrationTest();
+		String currentTestName = GestisciFilePenetrationTest.creaCartellaPenetrationTest();
 		
-		System.out.println("vuoi attaccare un IP oppure un dominio?\n1)IP\n2)Dominio\n0)esci");
-		sceltaTargetAttacco();
+		System.out.println("vuoi inserire un IP oppure un dominio?\n1)IP\n2)Dominio\n0)esci");
+		sceltaTargetAttacco(currentTestName);
 		
 	}
 
 	// **************************** FINE MAIN ****************************
 	
 	
+	
+	
+	
+	
 	// **************************** METODI VARI ****************************
 	
-	private static void sceltaTargetAttacco() {
+	private static void sceltaTargetAttacco(String currentTestName) {
 		Integer target = -1;
 		try {
 			target = Integer.parseInt(new BufferedReader(new InputStreamReader(System.in)).readLine());
@@ -49,7 +53,7 @@ public class AutomatizedPenetrationTestingScript {
 				e.printStackTrace();
 			}
 			//Creo oggetto che mi gestirà il mio penetration test automatizzato
-			ptw = new PenetrationTestWrapper(ip);
+			ptw = new PenetrationTestWrapper(currentTestName, ip);
 			ptw.startWithIP();
 			break;
 			
@@ -64,7 +68,7 @@ public class AutomatizedPenetrationTestingScript {
 				e.printStackTrace();
 			}
 			//Creo oggetto che mi gestirà il mio penetration test automatizzato
-			ptw = new PenetrationTestWrapper(dominio);
+			ptw = new PenetrationTestWrapper(currentTestName, dominio);
 			ptw.startWithDomain();
 			break;
 			
