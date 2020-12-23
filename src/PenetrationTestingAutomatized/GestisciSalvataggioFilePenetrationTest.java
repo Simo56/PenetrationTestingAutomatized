@@ -7,14 +7,13 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class GestisciFilePenetrationTest {
+public class GestisciSalvataggioFilePenetrationTest {
 	
 	// ******************** FUNZIONE PER CREARE LA CARTELLA DOVE SALVARE IL RISULTATO DEL PENETRATION TEST ********************
 	public static String creaCartellaPenetrationTest() {
-
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Path path;
-
+		
 		// ricavo il percorso da cui viene eseguito lo script per poi creare le cartelle
 		// in cui salverò il penetration test
 		path = Paths.get(System.getProperty("user.dir") + "/PenetrationTestSalvati");
@@ -43,7 +42,7 @@ public class GestisciFilePenetrationTest {
 			e.printStackTrace();
 		}
 		
-		System.out.println("cartella creata in questo percorso:" + path.toString());
+		System.out.println("cartella creata in questo percorso: " + path.toString());
 		
 		return nomeCartella;
 	}

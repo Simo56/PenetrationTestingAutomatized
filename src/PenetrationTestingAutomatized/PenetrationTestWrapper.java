@@ -14,7 +14,6 @@ public class PenetrationTestWrapper {
 	//costruttore con solo IP, strumenti di default (nmap e metasploit)
 	public PenetrationTestWrapper(String currentTestName, InetAddress ip) {
 		//istanzia gli oggetti che gestiranno le varie fasi del penetration test
-		
 		this.currentTestName = currentTestName;
 		this.ip = ip;
 		this.scanningModuleTool = new nmapScanningTool(currentTestName);
@@ -25,7 +24,6 @@ public class PenetrationTestWrapper {
 	//costruttore con solo Dominio, strumenti di default (nmap e metasploit)
 	public PenetrationTestWrapper(String currentTestName, String domain) {
 		//istanzia gli oggetti che gestiranno le varie fasi del penetration test
-		
 		this.currentTestName = currentTestName;
 		this.domain = domain;
 		this.scanningModuleTool = new nmapScanningTool(currentTestName);
@@ -35,8 +33,7 @@ public class PenetrationTestWrapper {
 	
 		
 	
-	/* TODO
-	//costruttore con parametri per decidere tool di scansione e exploit
+	/* TODO costruttore con parametri per decidere tool di scansione e exploit
 	public PenetrationTestWrapper(InetAddress ip, String scanningToolName, String exploitationToolName) {
 		
 	}
@@ -50,14 +47,20 @@ public class PenetrationTestWrapper {
 	
 	// **************************** METODO PER FAR PARTIRE IL PENETRATION TEST ****************************
 	
-	public void startWithIP() {
+	public void runWithIP() {
 		//avvia la scansione tramite ip
 		this.scanningModuleTool.scanIP(currentTestName, this.ip);
+		this.scanningModuleTool.saveXMLScannedData();
+		//TODO
+		//this.exploitationModule.retrieve etc etc exploit
 	}
 	
-	public void startWithDomain() {
+	public void runWithDomain() {
 		//avvia la scansione tramite dominio
 		this.scanningModuleTool.scanDomain(currentTestName, this.domain);
+		this.scanningModuleTool.saveXMLScannedData();
+		//TODO
+		//this.exploitationModule.retrieve etc etc exploit
 	}
 	
 	// **************************** FINE METODO PER FAR PARTIRE IL PENETRATION TEST ****************************
