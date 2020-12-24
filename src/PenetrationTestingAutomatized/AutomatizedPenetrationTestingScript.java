@@ -4,9 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class AutomatizedPenetrationTestingScript {
-	public static String currentTestName;
+	protected static String currentTestName;
+	protected static Path currentTestPath;
 	
 	//TODO far funzionare anche se trasformo in jar questo progetto... (problema con script dentro al progetto)
 	public static void main(String[] args) {
@@ -23,11 +26,19 @@ public class AutomatizedPenetrationTestingScript {
 		case 1:
 			//ip based
 			ptw = ipBasedPTWIstance();
+			
+			//percorso attuale del penetration test
+			currentTestPath = Paths.get(System.getProperty("user.dir"), "PENETRATION_TEST_SALVATI", currentTestName);
+			
 			ptw.runWithIP();
 			break;
 		case 2:
 			//domain based
 			ptw = domainBasedPTWIstance();
+			
+			//percorso attuale del penetration test
+			currentTestPath = Paths.get(System.getProperty("user.dir"), "PENETRATION_TEST_SALVATI", currentTestName);
+			
 			ptw.runWithDomain();
 			break;
 		case 0:
@@ -64,7 +75,7 @@ public class AutomatizedPenetrationTestingScript {
 			e.printStackTrace();
 		}
 		//Creo e ritorno oggetto che mi gestirà il mio penetration test automatizzato
-		return new PenetrationTestWrapper(currentTestName, ip);
+		return new PenetrationTestWrapper(ip);
 	}
 
 	private static PenetrationTestWrapper domainBasedPTWIstance() {
@@ -77,7 +88,7 @@ public class AutomatizedPenetrationTestingScript {
 			e.printStackTrace();
 		}
 		//Creo e ritorno oggetto che mi gestirà il mio penetration test automatizzato
-		return new PenetrationTestWrapper(currentTestName, dominio);		
+		return new PenetrationTestWrapper(dominio);		
 	}
 
 	// **************************** FINE METODI VARI ****************************

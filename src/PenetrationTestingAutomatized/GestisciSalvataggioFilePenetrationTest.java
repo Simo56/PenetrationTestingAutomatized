@@ -16,7 +16,7 @@ public class GestisciSalvataggioFilePenetrationTest {
 		
 		// ricavo il percorso da cui viene eseguito lo script per poi creare le cartelle
 		// in cui salverò il penetration test
-		path = Paths.get(System.getProperty("user.dir") + "/PenetrationTestSalvati");
+		path = Paths.get(System.getProperty("user.dir"));
 
 		String nomeCartella = "";
 
@@ -30,8 +30,7 @@ public class GestisciSalvataggioFilePenetrationTest {
 				e.printStackTrace();
 			}
 			// faccio anche sanificazione dell'input per evitare directory trasversal!
-			path = Paths.get(System.getProperty("user.dir") + "/PENETRATION_TEST_SALVATI/"
-					+ nomeCartella.replaceAll("[^a-zA-Z0-9.-]", "_"));
+			path = Paths.get(System.getProperty("user.dir"), "PENETRATION_TEST_SALVATI", nomeCartella.replaceAll("[^a-zA-Z0-9.-]", "_"));
 		} while (Files.exists(path));
 		
 		//creo la cartella

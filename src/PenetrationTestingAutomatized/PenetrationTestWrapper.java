@@ -8,22 +8,23 @@ public class PenetrationTestWrapper {
 	private InetAddress ip;
 	private String domain;
 	
+	
 	// **************************** COSTRUTTORI ****************************
 	
 	//costruttore con solo IP, strumenti di default (nmap e metasploit)
-	public PenetrationTestWrapper(String currentTestName, InetAddress ip) {
+	public PenetrationTestWrapper(InetAddress ip) {
 		//istanzia gli oggetti che gestiranno le varie fasi del penetration test
 		this.ip = ip;
-		this.scanningModuleTool = new nmapScanningTool(currentTestName);
+		this.scanningModuleTool = new nmapScanningTool();
 		//TODO this.exploitationModuleTool = metasploit!!!
 		
 	}
 	
 	//costruttore con solo Dominio, strumenti di default (nmap e metasploit)
-	public PenetrationTestWrapper(String currentTestName, String domain) {
+	public PenetrationTestWrapper(String domain) {
 		//istanzia gli oggetti che gestiranno le varie fasi del penetration test
 		this.domain = domain;
-		this.scanningModuleTool = new nmapScanningTool(currentTestName);
+		this.scanningModuleTool = new nmapScanningTool();
 		//TODO this.exploitationModuleTool = metasploit!!!
 		
 	}

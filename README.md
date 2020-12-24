@@ -6,10 +6,13 @@ Automatized Penetration Test is a University project for creating a Java autonom
 
 You need to have installed and linked on the PATH system variable at least one on each category:<br/>
 <br/>
-[Scanning Tools]
+[Scanning Tools]<br/>
+
 -Nmap
+
 <br/>
-[Exploitation Tools]
+[Exploitation Tools]<br/>
+
 -metasploit
 
 ## Documentation

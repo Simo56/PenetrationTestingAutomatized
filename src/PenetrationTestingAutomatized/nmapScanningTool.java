@@ -2,20 +2,15 @@ package PenetrationTestingAutomatized;
 
 import java.io.IOException;
 import java.net.InetAddress;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class nmapScanningTool implements ScanningModule {
-	// percorso salvataggio file xml
-	private final Path currentTestPath;
-	// oggetto per eseguire sottoprocessi
+	// oggetto per eseguire sottoprocessi, nmap in questo caso
 	private ProcessBuilder process;
 	
 	
 	// **************************** COSTRUTTORI ****************************
 
-	public nmapScanningTool(String currentTestName) {
-		this.currentTestPath = Paths.get(System.getProperty("user.dir") + "\\PENETRATION_TEST_SALVATI\\" + currentTestName);
+	public nmapScanningTool() {
 		this.process = new ProcessBuilder();
 	}
 
@@ -26,16 +21,20 @@ public class nmapScanningTool implements ScanningModule {
 
 	@Override
 	public void scanIP(InetAddress ip) {
+		//adjust directory to the right one identified by the currentTestPath var
+		this.process.directory(AutomatizedPenetrationTestingScript.currentTestPath.toFile());
 		// scan and find CVE
 		// nmap -A -Pn -sV --script vulners -oX /PENETRATION_TEST_SALVATI/CURRENT_TEST_NAME/NmapScanOutputCVE.xml -sV -sC IP
-		process.command("nmap",  "-sV", "-A", "-Pn", "--script", "vulners", "-oX", this.currentTestPath + "\\NmapScanOutputCVE.xml", ip.toString().replace("/", "")).inheritIO();
+		process.command("nmap",  "-sV", "-A", "-Pn", "--script", "vulners", "-oX", "NmapScanOutputCVE.xml", ip.getHostAddress()).inheritIO();
 	}
 
 	@Override
 	public void scanDomain(String domain) {
+		//adjust directory to the right one identified by the currentTestPath var
+		this.process.directory(AutomatizedPenetrationTestingScript.currentTestPath.toFile());
 		// scan and find CVE
 		// nmap -Pn -sV --script vulners -oX /PENETRATION_TEST_SALVATI/CURRENT_TEST_NAME/NmapScanOutputCVE.xml -sV -sC DOMAIN
-		process.command("nmap", "-A", "-Pn", "-sV","--script", "vulners", "-oX", this.currentTestPath + "\\NmapScanOutputCVE.xml", domain).inheritIO();
+		process.command("nmap", "-A", "-Pn", "-sV","--script", "vulners", "-oX", "NmapScanOutputCVE.xml", domain).inheritIO();
 	}
 
 	@Override
