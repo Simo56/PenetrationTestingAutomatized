@@ -6,10 +6,11 @@ import java.io.InputStreamReader;
 import java.net.InetAddress;
 
 public class AutomatizedPenetrationTestingScript {
-	private static String currentTestName;
+	public static String currentTestName;
 	
 	//TODO far funzionare anche se trasformo in jar questo progetto... (problema con script dentro al progetto)
 	public static void main(String[] args) {
+		System.out.println(System.getenv().toString());
 		//funzione per creare la cartella dove salverò l'esito del penetration test
 		currentTestName = GestisciSalvataggioFilePenetrationTest.creaCartellaPenetrationTest();
 		

@@ -6,8 +6,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class nmapScanningTool implements ScanningModule {
-	// percorso per avviare nmap
-	private final Path nmapPath;
 	// percorso salvataggio file xml
 	private final Path currentTestPath;
 	// oggetto per eseguire sottoprocessi
@@ -17,7 +15,6 @@ public class nmapScanningTool implements ScanningModule {
 	// **************************** COSTRUTTORI ****************************
 
 	public nmapScanningTool(String currentTestName) {
-		this.nmapPath = Paths.get(System.getProperty("user.dir") + "\\nmap");
 		this.currentTestPath = Paths.get(System.getProperty("user.dir") + "\\PENETRATION_TEST_SALVATI\\" + currentTestName);
 		this.process = new ProcessBuilder();
 	}
@@ -28,17 +25,17 @@ public class nmapScanningTool implements ScanningModule {
 	// **************************** METODI ****************************
 
 	@Override
-	public void scanIP(String currentTestName, InetAddress ip) {
+	public void scanIP(InetAddress ip) {
 		// scan and find CVE
 		// nmap -A -Pn -sV --script vulners -oX /PENETRATION_TEST_SALVATI/CURRENT_TEST_NAME/NmapScanOutputCVE.xml -sV -sC IP
-		process.command("cmd.exe", "/c", nmapPath + "\\nmap.exe", "-sV", "-A", "-Pn", "--script", "vulners", "-oX", currentTestPath + "\\NmapScanOutputCVE.xml", ip.toString().replace("/", "")).inheritIO();
+		process.command("nmap",  "-sV", "-A", "-Pn", "--script", "vulners", "-oX", this.currentTestPath + "\\NmapScanOutputCVE.xml", ip.toString().replace("/", "")).inheritIO();
 	}
 
 	@Override
-	public void scanDomain(String currentTestName, String domain) {
+	public void scanDomain(String domain) {
 		// scan and find CVE
 		// nmap -Pn -sV --script vulners -oX /PENETRATION_TEST_SALVATI/CURRENT_TEST_NAME/NmapScanOutputCVE.xml -sV -sC DOMAIN
-		process.command("cmd.exe", "/c", nmapPath + "\\nmap.exe", "-A", "-Pn", "-sV","--script", "vulners", "-oX", currentTestPath + "\\NmapScanOutputCVE.xml", domain).inheritIO();
+		process.command("nmap", "-A", "-Pn", "-sV","--script", "vulners", "-oX", this.currentTestPath + "\\NmapScanOutputCVE.xml", domain).inheritIO();
 	}
 
 	@Override

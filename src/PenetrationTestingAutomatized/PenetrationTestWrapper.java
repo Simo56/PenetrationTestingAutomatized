@@ -3,7 +3,6 @@ package PenetrationTestingAutomatized;
 import java.net.InetAddress;
 
 public class PenetrationTestWrapper {
-	private String currentTestName;
 	private ExploitationModule exploitationModuleTool;
 	private ScanningModule scanningModuleTool;
 	private InetAddress ip;
@@ -14,7 +13,6 @@ public class PenetrationTestWrapper {
 	//costruttore con solo IP, strumenti di default (nmap e metasploit)
 	public PenetrationTestWrapper(String currentTestName, InetAddress ip) {
 		//istanzia gli oggetti che gestiranno le varie fasi del penetration test
-		this.currentTestName = currentTestName;
 		this.ip = ip;
 		this.scanningModuleTool = new nmapScanningTool(currentTestName);
 		//TODO this.exploitationModuleTool = metasploit!!!
@@ -24,7 +22,6 @@ public class PenetrationTestWrapper {
 	//costruttore con solo Dominio, strumenti di default (nmap e metasploit)
 	public PenetrationTestWrapper(String currentTestName, String domain) {
 		//istanzia gli oggetti che gestiranno le varie fasi del penetration test
-		this.currentTestName = currentTestName;
 		this.domain = domain;
 		this.scanningModuleTool = new nmapScanningTool(currentTestName);
 		//TODO this.exploitationModuleTool = metasploit!!!
@@ -49,7 +46,7 @@ public class PenetrationTestWrapper {
 	
 	public void runWithIP() {
 		//avvia la scansione tramite ip
-		this.scanningModuleTool.scanIP(currentTestName, this.ip);
+		this.scanningModuleTool.scanIP(this.ip);
 		this.scanningModuleTool.saveXMLScannedData();
 		//TODO
 		//this.exploitationModule.retrieve etc etc exploit
@@ -57,7 +54,7 @@ public class PenetrationTestWrapper {
 	
 	public void runWithDomain() {
 		//avvia la scansione tramite dominio
-		this.scanningModuleTool.scanDomain(currentTestName, this.domain);
+		this.scanningModuleTool.scanDomain(this.domain);
 		this.scanningModuleTool.saveXMLScannedData();
 		//TODO
 		//this.exploitationModule.retrieve etc etc exploit
