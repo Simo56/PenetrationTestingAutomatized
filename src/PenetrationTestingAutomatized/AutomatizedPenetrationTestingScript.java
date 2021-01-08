@@ -8,18 +8,17 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class AutomatizedPenetrationTestingScript {
-	protected static String currentTestName;
+	//protected because other classes needs to see this variable to save their files
 	protected static Path currentTestPath;
 	
 	//TODO far funzionare anche se trasformo in jar questo progetto... (problema con script dentro al progetto)
 	public static void main(String[] args) {
-		System.out.println(System.getenv().toString());
-		//funzione per creare la cartella dove salverò l'esito del penetration test
-		currentTestName = GestisciSalvataggioFilePenetrationTest.creaCartellaPenetrationTest();
+		//Create the folder in which i will save all the other files
+		String currentTestName = APTSaveFilesClass.createPenetrationTestFolder();
 		
-		//decisione per ip o dominio
-		int atkType = sceltaAttacco();
-		//oggetto che gestirà tutto il penetration test
+		//choose if it's an IP based or Domain based penetration test
+		int atkType = chooseAtkType();
+		//this is the object that will handle all the penetration test
 		PenetrationTestWrapper ptw;
 		
 		switch(atkType) {
@@ -27,8 +26,8 @@ public class AutomatizedPenetrationTestingScript {
 			//ip based
 			ptw = ipBasedPTWIstance();
 			
-			//percorso attuale del penetration test
-			currentTestPath = Paths.get(System.getProperty("user.dir"), "PENETRATION_TEST_SALVATI", currentTestName);
+			//actual path of the penetration test
+			currentTestPath = Paths.get(System.getProperty("user.dir"), "PenetrationTestSaved", currentTestName.replaceAll("[^a-zA-Z0-9.-]", ""));
 			
 			ptw.runWithIP();
 			break;
@@ -36,8 +35,8 @@ public class AutomatizedPenetrationTestingScript {
 			//domain based
 			ptw = domainBasedPTWIstance();
 			
-			//percorso attuale del penetration test
-			currentTestPath = Paths.get(System.getProperty("user.dir"), "PENETRATION_TEST_SALVATI", currentTestName);
+			//actual path of the penetration test
+			currentTestPath = Paths.get(System.getProperty("user.dir"), "PenetrationTestSaved", currentTestName.replaceAll("[^a-zA-Z0-9.-]", ""));
 			
 			ptw.runWithDomain();
 			break;
@@ -45,21 +44,23 @@ public class AutomatizedPenetrationTestingScript {
 			System.exit(0);
 			break;
 		default:
-			//errore, esci
+			//error, exit
 			System.exit(-1);				
 		}
 	}
 
 
-	// **************************** METODI VARI ****************************
-	private static int sceltaAttacco() {
-		System.out.println("vuoi inserire un IP oppure un dominio?\n1)IP\n2)Dominio\n0)esci");
+	
+	
+	
+	private static int chooseAtkType() {
+		System.out.println("Do you want to attack an IP or a Domain?\n1)IP\n2)Domain\n0)Exit");
 		Integer target = -1;
 		try {
 			target = Integer.parseInt(new BufferedReader(new InputStreamReader(System.in)).readLine());
 		} catch (NumberFormatException | IOException e) {
-			if(e instanceof NumberFormatException) System.out.println("ERRORE NEL PARSING A INTEGER");
-			if(e instanceof IOException) System.out.println("ERRORE NELL'INPUT");
+			if(e instanceof NumberFormatException) System.out.println("ERROR WHILE PARSING THE INTEGER");
+			if(e instanceof IOException) System.out.println("INPUT ERROR");
 			e.printStackTrace();
 		}
 		return target;
@@ -68,28 +69,27 @@ public class AutomatizedPenetrationTestingScript {
 	private static PenetrationTestWrapper ipBasedPTWIstance() {
 		InetAddress ip = null;
 		try {
-			System.out.println("Inserisci l'IP");
+			System.out.println("Enter the IP: ");
 			ip = InetAddress.getByName(new BufferedReader(new InputStreamReader(System.in)).readLine());
 		} catch (IOException e) {
-			System.err.println("ERRORE NELL'INSERIMENTO DELL'IP!");
+			System.err.println("IP INPUT ERROR!");
 			e.printStackTrace();
 		}
-		//Creo e ritorno oggetto che mi gestirà il mio penetration test automatizzato
+		//create and return the object that will handle my automatized penetration test
 		return new PenetrationTestWrapper(ip);
 	}
 
 	private static PenetrationTestWrapper domainBasedPTWIstance() {
 		String dominio = "";
 		try {
-			System.out.println("Inserisci il dominio");
+			System.out.println("Enter the Domain: ");
 			dominio = new BufferedReader(new InputStreamReader(System.in)).readLine();
 		} catch (IOException e) {
-			System.err.println("ERRORE NELL'INSERIMENTO DEL DOMINIO!");
+			System.err.println("ERROR WHILE ENTERING THE DOMAIN");
 			e.printStackTrace();
 		}
-		//Creo e ritorno oggetto che mi gestirà il mio penetration test automatizzato
+		//create and return the object that will handle my automatized penetration test
 		return new PenetrationTestWrapper(dominio);		
 	}
 
-	// **************************** FINE METODI VARI ****************************
 }

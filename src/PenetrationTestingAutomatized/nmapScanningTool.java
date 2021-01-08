@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.InetAddress;
 
 public class nmapScanningTool implements ScanningModule {
-	// oggetto per eseguire sottoprocessi, nmap in questo caso
+	//object for handling the subprocesses, in this case NMAP
 	private ProcessBuilder process;
 	
 	
@@ -40,9 +40,12 @@ public class nmapScanningTool implements ScanningModule {
 	@Override
 	public void saveXMLScannedData() {
 		try {
-			this.process.start();
-		} catch (IOException e) {
-			System.err.println("ERRORE NELL'ESECUZIONE DELLO SCRIPT");
+			//waitFor() because wrapper needs to wait for the result of the scan that is now executing
+			this.process.start().waitFor();
+		} catch (IOException | InterruptedException e) {
+			if(e instanceof IOException) System.err.println("I/O ERROR DURING EXECUTION OF THE SUBPROCESS");
+			if(e instanceof InterruptedException) System.err.println("ERROR WHILE INTERRUPTING THE SUBPROCESS");
+			
 			e.printStackTrace();
 		}
 	}
