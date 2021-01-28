@@ -7,18 +7,10 @@ import java.util.List;
 public class nmapScanningTool implements ScanningModule {
 	//object for handling the subprocesses, in this case NMAP
 	private ProcessBuilder process;
-	
-	
-	// **************************** COSTRUTTORI ****************************
 
 	public nmapScanningTool() {
 		this.process = new ProcessBuilder();
 	}
-
-	// **************************** FINE COSTRUTTORI ****************************
-
-	
-	// **************************** METODI ****************************
 
 	@Override
 	public void scanIP(InetAddress ip) {
@@ -53,6 +45,4 @@ public class nmapScanningTool implements ScanningModule {
 			return null;
 		}
 	}
-
-	// **************************** FINE METODI ****************************
 }
