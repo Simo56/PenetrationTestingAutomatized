@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -11,10 +12,12 @@ public class AutomatizedPenetrationTestingScript {
 	//protected because other classes needs to see this variable to save their files
 	protected static Path currentTestPath;
 	
+	/*** MAIN ***/
+	
 	//TODO far funzionare anche se trasformo in jar questo progetto... (problema con script dentro al progetto)
 	public static void main(String[] args) {
 		//Create the folder in which i will save all the other files
-		String currentTestName = APTSaveFilesClass.createPenetrationTestFolder();
+		String currentTestName = createPenetrationTestFolder();
 		
 		//choose if it's an IP based or Domain based penetration test
 		int atkType = chooseAtkType();
@@ -48,8 +51,10 @@ public class AutomatizedPenetrationTestingScript {
 			System.exit(-1);				
 		}
 	}
-
-
+	
+	/*** END MAIN ***/
+	
+	
 	
 	
 	
@@ -65,6 +70,8 @@ public class AutomatizedPenetrationTestingScript {
 		}
 		return target;
 	}
+	
+	
 	
 	private static PenetrationTestWrapper ipBasedPTWIstance() {
 		InetAddress ip = null;
@@ -92,4 +99,41 @@ public class AutomatizedPenetrationTestingScript {
 		return new PenetrationTestWrapper(dominio);		
 	}
 
+	
+	
+	public static String createPenetrationTestFolder() {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		Path path;
+		
+		//get the directory in which the script has been executed for creating the folders
+		//in which I will save all the files
+		path = Paths.get(System.getProperty("user.dir"));
+
+		String currentTestName = "";
+
+		//ask and check for the current penetration test name [to not be already used]
+		do {
+			System.out.println("Enter the penetration test name: [needs to be unique, otherwise it will be re-asked!]:");
+			try {
+				currentTestName = br.readLine();
+			} catch (IOException e) {
+				System.err.println("FOLDER INPUT ERROR!");
+				e.printStackTrace();
+			}
+			//sanity check of the input for security reasons
+			path = Paths.get(System.getProperty("user.dir"), "PenetrationTestSaved", currentTestName.replaceAll("[^a-zA-Z0-9.-]", ""));
+		} while (Files.exists(path));
+		
+		//creating the folder
+		try {
+			Files.createDirectories(path);
+		} catch (IOException e) {
+			System.err.println("ERROR WHILE CREATING THE FOLDER!");
+			e.printStackTrace();
+		}
+		
+		System.out.println("Folder created in this path: " + path.toString());
+		
+		return currentTestName;
+	}
 }

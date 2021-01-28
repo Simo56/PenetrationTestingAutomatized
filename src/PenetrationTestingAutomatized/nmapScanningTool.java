@@ -2,6 +2,7 @@ package PenetrationTestingAutomatized;
 
 import java.io.IOException;
 import java.net.InetAddress;
+import java.util.List;
 
 public class nmapScanningTool implements ScanningModule {
 	//object for handling the subprocesses, in this case NMAP
@@ -38,15 +39,18 @@ public class nmapScanningTool implements ScanningModule {
 	}
 
 	@Override
-	public void saveXMLScannedData() {
+	public List<String> saveXMLScannedData() {
 		try {
 			//waitFor() because wrapper needs to wait for the result of the scan that is now executing
 			this.process.start().waitFor();
+			
+			//create the String list for the CVEs
+			return XMLFileParserClass.nmapVulnersExtrapolateExploitablesVulnerabilitiesFromXML();
 		} catch (IOException | InterruptedException e) {
 			if(e instanceof IOException) System.err.println("I/O ERROR DURING EXECUTION OF THE SUBPROCESS");
 			if(e instanceof InterruptedException) System.err.println("ERROR WHILE INTERRUPTING THE SUBPROCESS");
-			
 			e.printStackTrace();
+			return null;
 		}
 	}
 
