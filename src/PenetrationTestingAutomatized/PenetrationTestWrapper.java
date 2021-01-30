@@ -44,7 +44,7 @@ public class PenetrationTestWrapper {
 
 		if (!exploitsList.isEmpty()) {
 			// vulnerabilities found!
-			this.exploitationModuleTool.searchExploit(exploitsList);
+			this.exploitationModuleTool.searchAndExploit(exploitsList);
 						
 			// TODO sfrutta le vulnerabilita trovate
 		} else {
@@ -61,7 +61,7 @@ public class PenetrationTestWrapper {
 
 		if (!exploitsList.isEmpty()) {
 			// vulnerabilities found!
-			this.exploitationModuleTool.searchExploit(exploitsList);
+			this.exploitationModuleTool.searchAndExploit(exploitsList);
 			
 			// TODO sfrutta le vulnerabilita trovate
 		} else {
