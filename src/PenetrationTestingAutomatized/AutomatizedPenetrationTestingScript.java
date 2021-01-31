@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
+import java.net.MalformedURLException;
+import java.net.UnknownHostException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -11,8 +13,6 @@ import java.nio.file.Paths;
 public class AutomatizedPenetrationTestingScript {
 	//protected because other classes needs to see this variable to save their files
 	protected static Path currentTestPath;
-	
-	/*** MAIN ***/
 	
 	//TODO far funzionare anche se trasformo in jar questo progetto... (problema con script dentro al progetto)
 	public static void main(String[] args) {
@@ -41,7 +41,13 @@ public class AutomatizedPenetrationTestingScript {
 			//actual path of the penetration test
 			currentTestPath = Paths.get(System.getProperty("user.dir"), "PenetrationTestSaved", currentTestName.replaceAll("[^a-zA-Z0-9.-]", ""));
 			
-			ptw.runWithDomain();
+			try {
+				ptw.runWithDomain();
+			} catch (UnknownHostException | MalformedURLException e) {
+				if(e instanceof UnknownHostException) System.err.println("UnknownHostException ERROR DURING EXECUTION OF THE SUBPROCESS");
+				if(e instanceof MalformedURLException) System.err.println("MalformedURLException ERROR DURING EXECUTION OF THE SUBPROCESS");
+				e.printStackTrace();
+			}
 			break;
 		case 0:
 			System.exit(0);

@@ -1,6 +1,9 @@
 package PenetrationTestingAutomatized;
 
 import java.net.InetAddress;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.UnknownHostException;
 import java.util.List;
 
 public class PenetrationTestWrapper {
@@ -44,7 +47,7 @@ public class PenetrationTestWrapper {
 
 		if (!exploitsList.isEmpty()) {
 			// vulnerabilities found!
-			this.exploitationModuleTool.searchAndExploit(exploitsList);
+			this.exploitationModuleTool.searchAndExploit(exploitsList,this.ip);
 						
 			// TODO sfrutta le vulnerabilita trovate
 		} else {
@@ -54,14 +57,14 @@ public class PenetrationTestWrapper {
 		}
 	}
 
-	public void runWithDomain() {
+	public void runWithDomain() throws UnknownHostException, MalformedURLException {
 		// start scanning with the DOMAIN
 		this.scanningModuleTool.scanDomain(this.domain);
 		List<String> exploitsList = this.scanningModuleTool.saveXMLScannedData();
 
 		if (!exploitsList.isEmpty()) {
 			// vulnerabilities found!
-			this.exploitationModuleTool.searchAndExploit(exploitsList);
+			this.exploitationModuleTool.searchAndExploit(exploitsList,InetAddress.getByName(new URL(this.domain).getHost()));
 			
 			// TODO sfrutta le vulnerabilita trovate
 		} else {
