@@ -7,16 +7,14 @@ Automatized Penetration Test is a University project for creating a Java autonom
 You need to have installed and linked on the PATH system variable at least one on each category:
 <br/>
 <br/>
-[General utilities]
+[General]
 <br/>
-
--xterm
 
 <br/>
 [Scanning Tools]
 <br/>
 
--Nmap
+-nmap
 
 <br/>
 [Exploitation Tools]
@@ -29,7 +27,10 @@ You need to have installed and linked on the PATH system variable at least one o
 
 ## Usage
 
-Import the project on any IDE and run it, then follow the instructions
+For starting the Metasploit DB:<br/>
+Run service postgresql start<br/>
+Run msfdb init<br/><br/>
+Import the project on any IDE and run it, then follow the instructions on console<br/>
 
 ## Contributing
 

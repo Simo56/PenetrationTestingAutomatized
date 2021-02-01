@@ -1,0 +1,2777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Feb  1 16:30:34 2021 as: nmap -sV -A -&#45;script vuln -oX NmapScanOutputCVE.xml 192.168.1.40 -->
+<nmaprun scanner="nmap" args="nmap -sV -A -&#45;script vuln -oX NmapScanOutputCVE.xml 192.168.1.40" start="1612193434" startstr="Mon Feb  1 16:30:34 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1000" services="1,3-4,6-7,9,13,17,19-26,30,32-33,37,42-43,49,53,70,79-85,88-90,99-100,106,109-111,113,119,125,135,139,143-144,146,161,163,179,199,211-212,222,254-256,259,264,280,301,306,311,340,366,389,406-407,416-417,425,427,443-445,458,464-465,481,497,500,512-515,524,541,543-545,548,554-555,563,587,593,616-617,625,631,636,646,648,666-668,683,687,691,700,705,711,714,720,722,726,749,765,777,783,787,800-801,808,843,873,880,888,898,900-903,911-912,981,987,990,992-993,995,999-1002,1007,1009-1011,1021-1100,1102,1104-1108,1110-1114,1117,1119,1121-1124,1126,1130-1132,1137-1138,1141,1145,1147-1149,1151-1152,1154,1163-1166,1169,1174-1175,1183,1185-1187,1192,1198-1199,1201,1213,1216-1218,1233-1234,1236,1244,1247-1248,1259,1271-1272,1277,1287,1296,1300-1301,1309-1311,1322,1328,1334,1352,1417,1433-1434,1443,1455,1461,1494,1500-1501,1503,1521,1524,1533,1556,1580,1583,1594,1600,1641,1658,1666,1687-1688,1700,1717-1721,1723,1755,1761,1782-1783,1801,1805,1812,1839-1840,1862-1864,1875,1900,1914,1935,1947,1971-1972,1974,1984,1998-2010,2013,2020-2022,2030,2033-2035,2038,2040-2043,2045-2049,2065,2068,2099-2100,2103,2105-2107,2111,2119,2121,2126,2135,2144,2160-2161,2170,2179,2190-2191,2196,2200,2222,2251,2260,2288,2301,2323,2366,2381-2383,2393-2394,2399,2401,2492,2500,2522,2525,2557,2601-2602,2604-2605,2607-2608,2638,2701-2702,2710,2717-2718,2725,2800,2809,2811,2869,2875,2909-2910,2920,2967-2968,2998,3000-3001,3003,3005-3007,3011,3013,3017,3030-3031,3052,3071,3077,3128,3168,3211,3221,3260-3261,3268-3269,3283,3300-3301,3306,3322-3325,3333,3351,3367,3369-3372,3389-3390,3404,3476,3493,3517,3527,3546,3551,3580,3659,3689-3690,3703,3737,3766,3784,3800-3801,3809,3814,3826-3828,3851,3869,3871,3878,3880,3889,3905,3914,3918,3920,3945,3971,3986,3995,3998,4000-4006,4045,4111,4125-4126,4129,4224,4242,4279,4321,4343,4443-4446,4449,4550,4567,4662,4848,4899-4900,4998,5000-5004,5009,5030,5033,5050-5051,5054,5060-5061,5080,5087,5100-5102,5120,5190,5200,5214,5221-5222,5225-5226,5269,5280,5298,5357,5405,5414,5431-5432,5440,5500,5510,5544,5550,5555,5560,5566,5631,5633,5666,5678-5679,5718,5730,5800-5802,5810-5811,5815,5822,5825,5850,5859,5862,5877,5900-5904,5906-5907,5910-5911,5915,5922,5925,5950,5952,5959-5963,5987-5989,5998-6007,6009,6025,6059,6100-6101,6106,6112,6123,6129,6156,6346,6389,6502,6510,6543,6547,6565-6567,6580,6646,6666-6669,6689,6692,6699,6779,6788-6789,6792,6839,6881,6901,6969,7000-7002,7004,7007,7019,7025,7070,7100,7103,7106,7200-7201,7402,7435,7443,7496,7512,7625,7627,7676,7741,7777-7778,7800,7911,7920-7921,7937-7938,7999-8002,8007-8011,8021-8022,8031,8042,8045,8080-8090,8093,8099-8100,8180-8181,8192-8194,8200,8222,8254,8290-8292,8300,8333,8383,8400,8402,8443,8500,8600,8649,8651-8652,8654,8701,8800,8873,8888,8899,8994,9000-9003,9009-9011,9040,9050,9071,9080-9081,9090-9091,9099-9103,9110-9111,9200,9207,9220,9290,9415,9418,9485,9500,9502-9503,9535,9575,9593-9595,9618,9666,9876-9878,9898,9900,9917,9929,9943-9944,9968,9998-10004,10009-10010,10012,10024-10025,10082,10180,10215,10243,10566,10616-10617,10621,10626,10628-10629,10778,11110-11111,11967,12000,12174,12265,12345,13456,13722,13782-13783,14000,14238,14441-14442,15000,15002-15004,15660,15742,16000-16001,16012,16016,16018,16080,16113,16992-16993,17877,17988,18040,18101,18988,19101,19283,19315,19350,19780,19801,19842,20000,20005,20031,20221-20222,20828,21571,22939,23502,24444,24800,25734-25735,26214,27000,27352-27353,27355-27356,27715,28201,30000,30718,30951,31038,31337,32768-32785,33354,33899,34571-34573,35500,38292,40193,40911,41511,42510,44176,44442-44443,44501,45100,48080,49152-49161,49163,49165,49167,49175-49176,49400,49999-50003,50006,50300,50389,50500,50636,50800,51103,51493,52673,52822,52848,52869,54045,54328,55055-55056,55555,55600,56737-56738,57294,57797,58080,60020,60443,61532,61900,62078,63331,64623,64680,65000,65129,65389"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<prescript><script id="broadcast-avahi-dos" output="&#xa;  Discovered hosts:&#xa;    224.0.0.251&#xa;  After NULL UDP avahi packet DoS (CVE-2011-1002).&#xa;  Hosts are all up (not vulnerable).&#xa;"/></prescript><host starttime="1612193470" endtime="1612193867"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.1.40" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="977">
+<extrareasons reason="conn-refused" count="977"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="2.3.4" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:2.3.4</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="ftp-vsftpd-backdoor" output="&#xa;  VULNERABLE:&#xa;  vsFTPd version 2.3.4 backdoor&#xa;    State: VULNERABLE (Exploitable)&#xa;    IDs:  CVE:CVE-2011-2523  BID:48539&#xa;      vsFTPd version 2.3.4 backdoor, this was reported on 2011-07-04.&#xa;    Disclosure date: 2011-07-03&#xa;    Exploit results:&#xa;      Shell command: id&#xa;      Results: uid=0(root) gid=0(root)&#xa;    References:&#xa;      http://scarybeastsecurity.blogspot.com/2011/07/alert-vsftpd-download-backdoored.html&#xa;      https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/unix/ftp/vsftpd_234_backdoor.rb&#xa;      https://www.securityfocus.com/bid/48539&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2523&#xa;"><table key="CVE-2011-2523">
+<elem key="title">vsFTPd version 2.3.4 backdoor</elem>
+<elem key="state">VULNERABLE (Exploitable)</elem>
+<table key="ids">
+<elem>CVE:CVE-2011-2523</elem>
+<elem>BID:48539</elem>
+</table>
+<table key="description">
+<elem>vsFTPd version 2.3.4 backdoor, this was reported on 2011-07-04.</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="day">03</elem>
+<elem key="month">07</elem>
+<elem key="year">2011</elem>
+</table>
+</table>
+<elem key="disclosure">2011-07-03</elem>
+<table key="exploit_results">
+<elem>Shell command: id</elem>
+<elem>Results: uid=0(root) gid=0(root)</elem>
+</table>
+<table key="refs">
+<elem>http://scarybeastsecurity.blogspot.com/2011/07/alert-vsftpd-download-backdoored.html</elem>
+<elem>https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/unix/ftp/vsftpd_234_backdoor.rb</elem>
+<elem>https://www.securityfocus.com/bid/48539</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2523</elem>
+</table>
+</table>
+</script><script id="sslv2-drown" output="&#xa;"></script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="4.7p1 Debian 8ubuntu1" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:4.7p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="vulners" output="&#xa;  cpe:/a:openbsd:openssh:4.7p1: &#xa;    &#x9;CVE-2010-4478&#x9;7.5&#x9;https://vulners.com/cve/CVE-2010-4478&#xa;    &#x9;CVE-2008-1657&#x9;6.5&#x9;https://vulners.com/cve/CVE-2008-1657&#xa;    &#x9;SSV:60656&#x9;5.0&#x9;https://vulners.com/seebug/SSV:60656&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2017-15906&#x9;5.0&#x9;https://vulners.com/cve/CVE-2017-15906&#xa;    &#x9;CVE-2010-5107&#x9;5.0&#x9;https://vulners.com/cve/CVE-2010-5107&#xa;    &#x9;CVE-2012-0814&#x9;3.5&#x9;https://vulners.com/cve/CVE-2012-0814&#xa;    &#x9;CVE-2011-5000&#x9;3.5&#x9;https://vulners.com/cve/CVE-2011-5000&#xa;    &#x9;CVE-2011-4327&#x9;2.1&#x9;https://vulners.com/cve/CVE-2011-4327&#xa;    &#x9;CVE-2008-3259&#x9;1.2&#x9;https://vulners.com/cve/CVE-2008-3259"><table key="cpe:/a:openbsd:openssh:4.7p1">
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-4478</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-1657</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60656</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-15906</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-5107</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">3.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0814</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">3.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-5000</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">2.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-4327</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">1.2</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-3259</elem>
+<elem key="type">cve</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="telnet" product="Linux telnetd" ostype="Linux" method="probed" conf="10"><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname=" metasploitable.localdomain" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="smtp-vuln-cve2010-4344" output="&#xa;  The SMTP server is not Exim: NOT VULNERABLE&#xa;"/><script id="ssl-dh-params" output="&#xa;  VULNERABLE:&#xa;  Anonymous Diffie-Hellman Key Exchange MitM Vulnerability&#xa;    State: VULNERABLE&#xa;      Transport Layer Security (TLS) services that use anonymous&#xa;      Diffie-Hellman key exchange only provide protection against passive&#xa;      eavesdropping, and are vulnerable to active man-in-the-middle attacks&#xa;      which could completely compromise the confidentiality and integrity&#xa;      of any data exchanged over the resulting session.&#xa;    Check results:&#xa;      ANONYMOUS DH GROUP 1&#xa;            Cipher Suite: TLS_DH_anon_EXPORT_WITH_RC4_40_MD5&#xa;            Modulus Type: Safe prime&#xa;            Modulus Source: Unknown/Custom-generated&#xa;            Modulus Length: 512&#xa;            Generator Length: 8&#xa;            Public Key Length: 512&#xa;    References:&#xa;      https://www.ietf.org/rfc/rfc2246.txt&#xa;  &#xa;  Transport Layer Security (TLS) Protocol DHE_EXPORT Ciphers Downgrade MitM (Logjam)&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2015-4000  BID:74733&#xa;      The Transport Layer Security (TLS) protocol contains a flaw that is&#xa;      triggered when handling Diffie-Hellman key exchanges defined with&#xa;      the DHE_EXPORT cipher. This may allow a man-in-the-middle attacker&#xa;      to downgrade the security of a TLS session to 512-bit export-grade&#xa;      cryptography, which is significantly weaker, allowing the attacker&#xa;      to more easily break the encryption and monitor or tamper with&#xa;      the encrypted stream.&#xa;    Disclosure date: 2015-5-19&#xa;    Check results:&#xa;      EXPORT-GRADE DH GROUP 1&#xa;            Cipher Suite: TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA&#xa;            Modulus Type: Safe prime&#xa;            Modulus Source: Unknown/Custom-generated&#xa;            Modulus Length: 512&#xa;            Generator Length: 8&#xa;            Public Key Length: 512&#xa;    References:&#xa;      https://www.securityfocus.com/bid/74733&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4000&#xa;      https://weakdh.org&#xa;  &#xa;  Diffie-Hellman Key Exchange Insufficient Group Strength&#xa;    State: VULNERABLE&#xa;      Transport Layer Security (TLS) services that use Diffie-Hellman groups&#xa;      of insufficient strength, especially those using one of a few commonly&#xa;      shared groups, may be susceptible to passive eavesdropping attacks.&#xa;    Check results:&#xa;      WEAK DH GROUP 1&#xa;            Cipher Suite: TLS_DHE_RSA_WITH_AES_256_CBC_SHA&#xa;            Modulus Type: Safe prime&#xa;            Modulus Source: postfix builtin&#xa;            Modulus Length: 1024&#xa;            Generator Length: 8&#xa;            Public Key Length: 1024&#xa;    References:&#xa;      https://weakdh.org&#xa;"><table key="NMAP-36">
+<elem key="title">Anonymous Diffie-Hellman Key Exchange MitM Vulnerability</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>Transport Layer Security (TLS) services that use anonymous&#xa;Diffie-Hellman key exchange only provide protection against passive&#xa;eavesdropping, and are vulnerable to active man-in-the-middle attacks&#xa;which could completely compromise the confidentiality and integrity&#xa;of any data exchanged over the resulting session.</elem>
+</table>
+<table key="check_results">
+<elem>ANONYMOUS DH GROUP 1&#xa;      Cipher Suite: TLS_DH_anon_EXPORT_WITH_RC4_40_MD5&#xa;      Modulus Type: Safe prime&#xa;      Modulus Source: Unknown/Custom-generated&#xa;      Modulus Length: 512&#xa;      Generator Length: 8&#xa;      Public Key Length: 512</elem>
+</table>
+<table key="refs">
+<elem>https://www.ietf.org/rfc/rfc2246.txt</elem>
+</table>
+</table>
+<table key="CVE-2015-4000">
+<elem key="title">Transport Layer Security (TLS) Protocol DHE_EXPORT Ciphers Downgrade MitM (Logjam)</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2015-4000</elem>
+<elem>BID:74733</elem>
+</table>
+<table key="description">
+<elem>The Transport Layer Security (TLS) protocol contains a flaw that is&#xa;triggered when handling Diffie-Hellman key exchanges defined with&#xa;the DHE_EXPORT cipher. This may allow a man-in-the-middle attacker&#xa;to downgrade the security of a TLS session to 512-bit export-grade&#xa;cryptography, which is significantly weaker, allowing the attacker&#xa;to more easily break the encryption and monitor or tamper with&#xa;the encrypted stream.</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="day">19</elem>
+<elem key="month">5</elem>
+<elem key="year">2015</elem>
+</table>
+</table>
+<elem key="disclosure">2015-5-19</elem>
+<table key="check_results">
+<elem>EXPORT-GRADE DH GROUP 1&#xa;      Cipher Suite: TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA&#xa;      Modulus Type: Safe prime&#xa;      Modulus Source: Unknown/Custom-generated&#xa;      Modulus Length: 512&#xa;      Generator Length: 8&#xa;      Public Key Length: 512</elem>
+</table>
+<table key="refs">
+<elem>https://www.securityfocus.com/bid/74733</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4000</elem>
+<elem>https://weakdh.org</elem>
+</table>
+</table>
+<table key="NMAP-37">
+<elem key="title">Diffie-Hellman Key Exchange Insufficient Group Strength</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>Transport Layer Security (TLS) services that use Diffie-Hellman groups&#xa;of insufficient strength, especially those using one of a few commonly&#xa;shared groups, may be susceptible to passive eavesdropping attacks.</elem>
+</table>
+<table key="check_results">
+<elem>WEAK DH GROUP 1&#xa;      Cipher Suite: TLS_DHE_RSA_WITH_AES_256_CBC_SHA&#xa;      Modulus Type: Safe prime&#xa;      Modulus Source: postfix builtin&#xa;      Modulus Length: 1024&#xa;      Generator Length: 8&#xa;      Public Key Length: 1024</elem>
+</table>
+<table key="refs">
+<elem>https://weakdh.org</elem>
+</table>
+</table>
+</script><script id="ssl-poodle" output="&#xa;  VULNERABLE:&#xa;  SSL POODLE information leak&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2014-3566  BID:70574&#xa;          The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other&#xa;          products, uses nondeterministic CBC padding, which makes it easier&#xa;          for man-in-the-middle attackers to obtain cleartext data via a&#xa;          padding-oracle attack, aka the &quot;POODLE&quot; issue.&#xa;    Disclosure date: 2014-10-14&#xa;    Check results:&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA&#xa;    References:&#xa;      https://www.securityfocus.com/bid/70574&#xa;      https://www.imperialviolet.org/2014/10/14/poodle.html&#xa;      https://www.openssl.org/~bodo/ssl-poodle.pdf&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566&#xa;"><table key="CVE-2014-3566">
+<elem key="title">SSL POODLE information leak</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2014-3566</elem>
+<elem>BID:70574</elem>
+</table>
+<table key="description">
+<elem>    The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other&#xa;    products, uses nondeterministic CBC padding, which makes it easier&#xa;    for man-in-the-middle attackers to obtain cleartext data via a&#xa;    padding-oracle attack, aka the &quot;POODLE&quot; issue.</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="day">14</elem>
+<elem key="month">10</elem>
+<elem key="year">2014</elem>
+</table>
+</table>
+<elem key="disclosure">2014-10-14</elem>
+<table key="check_results">
+<elem>TLS_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+<table key="refs">
+<elem>https://www.securityfocus.com/bid/70574</elem>
+<elem>https://www.imperialviolet.org/2014/10/14/poodle.html</elem>
+<elem>https://www.openssl.org/~bodo/ssl-poodle.pdf</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566</elem>
+</table>
+</table>
+</script><script id="sslv2-drown" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" product="ISC BIND" version="9.4.2" method="probed" conf="10"><cpe>cpe:/a:isc:bind:9.4.2</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="vulners" output="&#xa;  cpe:/a:isc:bind:9.4.2: &#xa;    &#x9;SSV:2853&#x9;10.0&#x9;https://vulners.com/seebug/SSV:2853&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2008-0122&#x9;10.0&#x9;https://vulners.com/cve/CVE-2008-0122&#xa;    &#x9;SSV:60184&#x9;8.5&#x9;https://vulners.com/seebug/SSV:60184&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2012-1667&#x9;8.5&#x9;https://vulners.com/cve/CVE-2012-1667&#xa;    &#x9;SSV:60926&#x9;7.8&#x9;https://vulners.com/seebug/SSV:60926&#x9;*EXPLOIT*&#xa;    &#x9;SSV:60292&#x9;7.8&#x9;https://vulners.com/seebug/SSV:60292&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2014-8500&#x9;7.8&#x9;https://vulners.com/cve/CVE-2014-8500&#xa;    &#x9;CVE-2013-4854&#x9;7.8&#x9;https://vulners.com/cve/CVE-2013-4854&#xa;    &#x9;CVE-2012-5166&#x9;7.8&#x9;https://vulners.com/cve/CVE-2012-5166&#xa;    &#x9;CVE-2012-4244&#x9;7.8&#x9;https://vulners.com/cve/CVE-2012-4244&#xa;    &#x9;CVE-2012-3817&#x9;7.8&#x9;https://vulners.com/cve/CVE-2012-3817&#xa;    &#x9;CVE-2008-4163&#x9;7.8&#x9;https://vulners.com/cve/CVE-2008-4163&#xa;    &#x9;CVE-2010-0382&#x9;7.6&#x9;https://vulners.com/cve/CVE-2010-0382&#xa;    &#x9;EXPLOITPACK:D6DDF5E24DE171DAAD71FD95FC1B67F2&#x9;7.2&#x9;https://vulners.com/exploitpack/EXPLOITPACK:D6DDF5E24DE171DAAD71FD95FC1B67F2&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2017-3141&#x9;7.2&#x9;https://vulners.com/cve/CVE-2017-3141&#xa;    &#x9;CVE-2015-8461&#x9;7.1&#x9;https://vulners.com/cve/CVE-2015-8461&#xa;    &#x9;CVE-2015-8704&#x9;6.8&#x9;https://vulners.com/cve/CVE-2015-8704&#xa;    &#x9;CVE-2009-0025&#x9;6.8&#x9;https://vulners.com/cve/CVE-2009-0025&#xa;    &#x9;CVE-2015-8705&#x9;6.6&#x9;https://vulners.com/cve/CVE-2015-8705&#xa;    &#x9;CVE-2010-3614&#x9;6.4&#x9;https://vulners.com/cve/CVE-2010-3614&#xa;    &#x9;SSV:30099&#x9;5.0&#x9;https://vulners.com/seebug/SSV:30099&#x9;*EXPLOIT*&#xa;    &#x9;SSV:20595&#x9;5.0&#x9;https://vulners.com/seebug/SSV:20595&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:157836&#x9;5.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:157836&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:48521&#x9;5.0&#x9;https://vulners.com/exploitdb/EDB-ID:48521&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2020-8617&#x9;5.0&#x9;https://vulners.com/cve/CVE-2020-8617&#xa;    &#x9;CVE-2020-8616&#x9;5.0&#x9;https://vulners.com/cve/CVE-2020-8616&#xa;    &#x9;CVE-2017-3145&#x9;5.0&#x9;https://vulners.com/cve/CVE-2017-3145&#xa;    &#x9;CVE-2016-9444&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-9444&#xa;    &#x9;CVE-2016-9131&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-9131&#xa;    &#x9;CVE-2016-8864&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-8864&#xa;    &#x9;CVE-2016-2848&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-2848&#xa;    &#x9;CVE-2016-1286&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-1286&#xa;    &#x9;CVE-2015-8000&#x9;5.0&#x9;https://vulners.com/cve/CVE-2015-8000&#xa;    &#x9;CVE-2012-1033&#x9;5.0&#x9;https://vulners.com/cve/CVE-2012-1033&#xa;    &#x9;CVE-2011-4313&#x9;5.0&#x9;https://vulners.com/cve/CVE-2011-4313&#xa;    &#x9;CVE-2011-1910&#x9;5.0&#x9;https://vulners.com/cve/CVE-2011-1910&#xa;    &#x9;CVE-2009-0265&#x9;5.0&#x9;https://vulners.com/cve/CVE-2009-0265&#xa;    &#x9;1337DAY-ID-34485&#x9;5.0&#x9;https://vulners.com/zdt/1337DAY-ID-34485&#x9;*EXPLOIT*&#xa;    &#x9;SSV:11919&#x9;4.3&#x9;https://vulners.com/seebug/SSV:11919&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:9300&#x9;4.3&#x9;https://vulners.com/exploitdb/EDB-ID:9300&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2017-3143&#x9;4.3&#x9;https://vulners.com/cve/CVE-2017-3143&#xa;    &#x9;CVE-2017-3142&#x9;4.3&#x9;https://vulners.com/cve/CVE-2017-3142&#xa;    &#x9;CVE-2016-2775&#x9;4.3&#x9;https://vulners.com/cve/CVE-2016-2775&#xa;    &#x9;CVE-2016-1285&#x9;4.3&#x9;https://vulners.com/cve/CVE-2016-1285&#xa;    &#x9;CVE-2010-0097&#x9;4.3&#x9;https://vulners.com/cve/CVE-2010-0097&#xa;    &#x9;CVE-2009-0696&#x9;4.3&#x9;https://vulners.com/cve/CVE-2009-0696&#xa;    &#x9;CVE-2020-8622&#x9;4.0&#x9;https://vulners.com/cve/CVE-2020-8622&#xa;    &#x9;CVE-2016-6170&#x9;4.0&#x9;https://vulners.com/cve/CVE-2016-6170&#xa;    &#x9;CVE-2010-0290&#x9;4.0&#x9;https://vulners.com/cve/CVE-2010-0290&#xa;    &#x9;SSV:14986&#x9;2.6&#x9;https://vulners.com/seebug/SSV:14986&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2009-4022&#x9;2.6&#x9;https://vulners.com/cve/CVE-2009-4022&#xa;    &#x9;PACKETSTORM:142800&#x9;0.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:142800&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:42121&#x9;0.0&#x9;https://vulners.com/exploitdb/EDB-ID:42121&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-27896&#x9;0.0&#x9;https://vulners.com/zdt/1337DAY-ID-27896&#x9;*EXPLOIT*"><table key="cpe:/a:isc:bind:9.4.2">
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:2853</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-0122</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">8.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60184</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">8.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-1667</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60926</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60292</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-8500</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-4854</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-5166</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-4244</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-3817</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-4163</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">7.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-0382</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">7.2</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EXPLOITPACK:D6DDF5E24DE171DAAD71FD95FC1B67F2</elem>
+<elem key="type">exploitpack</elem>
+</table>
+<table>
+<elem key="cvss">7.2</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3141</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">7.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-8461</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-8704</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-0025</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-8705</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.4</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-3614</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:30099</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:20595</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:157836</elem>
+<elem key="type">packetstorm</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:48521</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-8617</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-8616</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3145</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-9444</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-9131</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-8864</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-2848</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-1286</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2015-8000</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-1033</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-4313</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-1910</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-0265</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-34485</elem>
+<elem key="type">zdt</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:11919</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:9300</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3143</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-3142</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-2775</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-1285</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-0097</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-0696</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-8622</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-6170</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-0290</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">2.6</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:14986</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">2.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-4022</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:142800</elem>
+<elem key="type">packetstorm</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:42121</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-27896</elem>
+<elem key="type">zdt</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.8" extrainfo="(Ubuntu) DAV/2" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.8</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-csrf" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.40&#xa;  Found the following possible CSRF vulnerabilities: &#xa;    &#xa;    Path: http://192.168.1.40:80/dvwa/&#xa;    Form id: &#xa;    Form action: login.php&#xa;    &#xa;    Path: http://192.168.1.40:80/mutillidae/index.php?page=source-viewer.php&#xa;    Form id: id-bad-cred-tr&#xa;    Form action: index.php?page=source-viewer.php&#xa;    &#xa;    Path: http://192.168.1.40:80/mutillidae/index.php?page=html5-storage.php&#xa;    Form id: idform&#xa;    Form action: index.php?page=html5-storage.php&#xa;"/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-enum" output="&#xa;  /tikiwiki/: Tikiwiki&#xa;  /test/: Test page&#xa;  /phpinfo.php: Possible information file&#xa;  /phpMyAdmin/: phpMyAdmin&#xa;  /doc/: Potentially interesting directory w/ listing on &apos;apache/2.2.8 (ubuntu) dav/2&apos;&#xa;  /icons/: Potentially interesting folder w/ directory listing&#xa;  /index/: Potentially interesting folder&#xa;"/><script id="http-server-header" output="Apache/2.2.8 (Ubuntu) DAV/2"><elem>Apache/2.2.8 (Ubuntu) DAV/2</elem>
+</script><script id="http-slowloris-check" output="&#xa;  VULNERABLE:&#xa;  Slowloris DOS attack&#xa;    State: LIKELY VULNERABLE&#xa;    IDs:  CVE:CVE-2007-6750&#xa;      Slowloris tries to keep many connections to the target web server open and hold&#xa;      them open as long as possible.  It accomplishes this by opening connections to&#xa;      the target web server and sending a partial request. By doing so, it starves&#xa;      the http server&apos;s resources causing Denial Of Service.&#xa;      &#xa;    Disclosure date: 2009-09-17&#xa;    References:&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750&#xa;      http://ha.ckers.org/slowloris/&#xa;"><table key="CVE-2007-6750">
+<elem key="title">Slowloris DOS attack</elem>
+<elem key="state">LIKELY VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2007-6750</elem>
+</table>
+<table key="description">
+<elem>Slowloris tries to keep many connections to the target web server open and hold&#xa;them open as long as possible.  It accomplishes this by opening connections to&#xa;the target web server and sending a partial request. By doing so, it starves&#xa;the http server&apos;s resources causing Denial Of Service.&#xa;</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="day">17</elem>
+<elem key="month">09</elem>
+<elem key="year">2009</elem>
+</table>
+</table>
+<elem key="disclosure">2009-09-17</elem>
+<table key="exploit_results">
+</table>
+<table key="refs">
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750</elem>
+<elem>http://ha.ckers.org/slowloris/</elem>
+</table>
+</table>
+</script><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-trace" output="TRACE is enabled"/><script id="http-vuln-cve2017-1001000" output="ERROR: Script execution failed (use -d to debug)"/><script id="vulners" output="&#xa;  Apache httpd 2.2.8: &#xa;    &#x9;SSV:69341&#x9;10.0&#x9;https://vulners.com/seebug/SSV:69341&#x9;*EXPLOIT*&#xa;    &#x9;SSV:19282&#x9;10.0&#x9;https://vulners.com/seebug/SSV:19282&#x9;*EXPLOIT*&#xa;    &#x9;SSV:19236&#x9;10.0&#x9;https://vulners.com/seebug/SSV:19236&#x9;*EXPLOIT*&#xa;    &#x9;SSV:11999&#x9;10.0&#x9;https://vulners.com/seebug/SSV:11999&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:86964&#x9;10.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:86964&#x9;*EXPLOIT*&#xa;    &#x9;MSF:AUXILIARY/DOS/HTTP/APACHE_MOD_ISAPI&#x9;10.0&#x9;https://vulners.com/metasploit/MSF:AUXILIARY/DOS/HTTP/APACHE_MOD_ISAPI&#x9;*EXPLOIT*&#xa;    &#x9;HTTPD:8696B75D7F345F7B69DA132B47E39EB5&#x9;10.0&#x9;https://vulners.com/httpd/HTTPD:8696B75D7F345F7B69DA132B47E39EB5&#xa;    &#x9;HTTPD:74DC0313423435D4D7DC7943E60495A8&#x9;10.0&#x9;https://vulners.com/httpd/HTTPD:74DC0313423435D4D7DC7943E60495A8&#xa;    &#x9;HTTPD:6A0D341DB569FACF7F8A423D96B149BD&#x9;10.0&#x9;https://vulners.com/httpd/HTTPD:6A0D341DB569FACF7F8A423D96B149BD&#xa;    &#x9;HTTPD:4901C61501FDBE6F1DBAF673D472D534&#x9;10.0&#x9;https://vulners.com/httpd/HTTPD:4901C61501FDBE6F1DBAF673D472D534&#xa;    &#x9;EXPLOITPACK:30ED468EC8BD5B71B2CB93825A852B80&#x9;10.0&#x9;https://vulners.com/exploitpack/EXPLOITPACK:30ED468EC8BD5B71B2CB93825A852B80&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:14288&#x9;10.0&#x9;https://vulners.com/exploitdb/EDB-ID:14288&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:11650&#x9;10.0&#x9;https://vulners.com/exploitdb/EDB-ID:11650&#x9;*EXPLOIT*&#xa;    &#x9;SSV:72403&#x9;7.8&#x9;https://vulners.com/seebug/SSV:72403&#x9;*EXPLOIT*&#xa;    &#x9;SSV:2820&#x9;7.8&#x9;https://vulners.com/seebug/SSV:2820&#x9;*EXPLOIT*&#xa;    &#x9;SSV:26043&#x9;7.8&#x9;https://vulners.com/seebug/SSV:26043&#x9;*EXPLOIT*&#xa;    &#x9;SSV:20899&#x9;7.8&#x9;https://vulners.com/seebug/SSV:20899&#x9;*EXPLOIT*&#xa;    &#x9;SSV:11569&#x9;7.8&#x9;https://vulners.com/seebug/SSV:11569&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:126851&#x9;7.8&#x9;https://vulners.com/packetstorm/PACKETSTORM:126851&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:123527&#x9;7.8&#x9;https://vulners.com/packetstorm/PACKETSTORM:123527&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:122962&#x9;7.8&#x9;https://vulners.com/packetstorm/PACKETSTORM:122962&#x9;*EXPLOIT*&#xa;    &#x9;MSF:AUXILIARY/DOS/HTTP/APACHE_RANGE_DOS&#x9;7.8&#x9;https://vulners.com/metasploit/MSF:AUXILIARY/DOS/HTTP/APACHE_RANGE_DOS&#x9;*EXPLOIT*&#xa;    &#x9;HTTPD:B9296B1CB879B279D132192A733A6288&#x9;7.8&#x9;https://vulners.com/httpd/HTTPD:B9296B1CB879B279D132192A733A6288&#xa;    &#x9;HTTPD:B42B1A6F1E10C59032AD49CAEF5BC919&#x9;7.8&#x9;https://vulners.com/httpd/HTTPD:B42B1A6F1E10C59032AD49CAEF5BC919&#xa;    &#x9;HTTPD:15D329E832BC7E516FAEC91A287BD5A8&#x9;7.8&#x9;https://vulners.com/httpd/HTTPD:15D329E832BC7E516FAEC91A287BD5A8&#xa;    &#x9;EXPLOITPACK:186B5FCF5C57B52642E62C06BABC6F83&#x9;7.8&#x9;https://vulners.com/exploitpack/EXPLOITPACK:186B5FCF5C57B52642E62C06BABC6F83&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:8842&#x9;7.8&#x9;https://vulners.com/exploitdb/EDB-ID:8842&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:18221&#x9;7.8&#x9;https://vulners.com/exploitdb/EDB-ID:18221&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:17696&#x9;7.8&#x9;https://vulners.com/exploitdb/EDB-ID:17696&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-21170&#x9;7.8&#x9;https://vulners.com/zdt/1337DAY-ID-21170&#x9;*EXPLOIT*&#xa;    &#x9;SSV:12673&#x9;7.5&#x9;https://vulners.com/seebug/SSV:12673&#x9;*EXPLOIT*&#xa;    &#x9;SSV:12626&#x9;7.5&#x9;https://vulners.com/seebug/SSV:12626&#x9;*EXPLOIT*&#xa;    &#x9;HTTPD:F564BBA32AA088833DA032B7EB77CA29&#x9;7.5&#x9;https://vulners.com/httpd/HTTPD:F564BBA32AA088833DA032B7EB77CA29&#xa;    &#x9;HTTPD:E74D6161229FA3D00A1783E6C3426C5D&#x9;7.5&#x9;https://vulners.com/httpd/HTTPD:E74D6161229FA3D00A1783E6C3426C5D&#xa;    &#x9;HTTPD:C7D2DA1ACB016A5220CA8E74647BED26&#x9;7.5&#x9;https://vulners.com/httpd/HTTPD:C7D2DA1ACB016A5220CA8E74647BED26&#xa;    &#x9;HTTPD:8F00FB1DD7567228376803FEDB0EC3B6&#x9;7.5&#x9;https://vulners.com/httpd/HTTPD:8F00FB1DD7567228376803FEDB0EC3B6&#xa;    &#x9;HTTPD:7EEE138FD834328B3FC98E4B7FCAD266&#x9;7.5&#x9;https://vulners.com/httpd/HTTPD:7EEE138FD834328B3FC98E4B7FCAD266&#xa;    &#x9;HTTPD:3C869ED31997C0F748E2CD4FE85D0DA8&#x9;7.5&#x9;https://vulners.com/httpd/HTTPD:3C869ED31997C0F748E2CD4FE85D0DA8&#xa;    &#x9;HTTPD:3659017FAAE50804F97DA8236B92130D&#x9;7.5&#x9;https://vulners.com/httpd/HTTPD:3659017FAAE50804F97DA8236B92130D&#xa;    &#x9;HTTPD:1EFC9FFF0E161886B1F765B7E865B6B2&#x9;7.5&#x9;https://vulners.com/httpd/HTTPD:1EFC9FFF0E161886B1F765B7E865B6B2&#xa;    &#x9;HTTPD:19C7B2BF273EC2E86BFD911FFB87CF03&#x9;7.5&#x9;https://vulners.com/httpd/HTTPD:19C7B2BF273EC2E86BFD911FFB87CF03&#xa;    &#x9;HTTPD:143F3A43D871E3AFFF956DB1049A6A2A&#x9;7.5&#x9;https://vulners.com/httpd/HTTPD:143F3A43D871E3AFFF956DB1049A6A2A&#xa;    &#x9;SSV:11802&#x9;7.1&#x9;https://vulners.com/seebug/SSV:11802&#x9;*EXPLOIT*&#xa;    &#x9;SSV:11762&#x9;7.1&#x9;https://vulners.com/seebug/SSV:11762&#x9;*EXPLOIT*&#xa;    &#x9;HTTPD:DEDE3CEB9599A8A299F93A7DF12C724A&#x9;7.1&#x9;https://vulners.com/httpd/HTTPD:DEDE3CEB9599A8A299F93A7DF12C724A&#xa;    &#x9;HTTPD:C538A9873CDC035E18FA06D6A02323B5&#x9;7.1&#x9;https://vulners.com/httpd/HTTPD:C538A9873CDC035E18FA06D6A02323B5&#xa;    &#x9;HTTPD:9ABDC7E294E94BEDA47AC9B86645BD13&#x9;7.1&#x9;https://vulners.com/httpd/HTTPD:9ABDC7E294E94BEDA47AC9B86645BD13&#xa;    &#x9;HTTPD:4443A36D55E9A7A65067E1A20A4C3AAE&#x9;7.1&#x9;https://vulners.com/httpd/HTTPD:4443A36D55E9A7A65067E1A20A4C3AAE&#xa;    &#x9;SSV:60427&#x9;6.9&#x9;https://vulners.com/seebug/SSV:60427&#x9;*EXPLOIT*&#xa;    &#x9;SSV:60386&#x9;6.9&#x9;https://vulners.com/seebug/SSV:60386&#x9;*EXPLOIT*&#xa;    &#x9;SSV:60069&#x9;6.9&#x9;https://vulners.com/seebug/SSV:60069&#x9;*EXPLOIT*&#xa;    &#x9;HTTPD:5E9A21F9EC4C8014D276CAE137A8806D&#x9;6.9&#x9;https://vulners.com/httpd/HTTPD:5E9A21F9EC4C8014D276CAE137A8806D&#xa;    &#x9;HTTPD:403A74F009AB14FE702EA7E39E828C52&#x9;6.9&#x9;https://vulners.com/httpd/HTTPD:403A74F009AB14FE702EA7E39E828C52&#xa;    &#x9;PACKETSTORM:127546&#x9;6.8&#x9;https://vulners.com/packetstorm/PACKETSTORM:127546&#x9;*EXPLOIT*&#xa;    &#x9;HTTPD:E3EA50E892151D4F57BF7B9A57DDA94D&#x9;6.8&#x9;https://vulners.com/httpd/HTTPD:E3EA50E892151D4F57BF7B9A57DDA94D&#xa;    &#x9;HTTPD:21BDE4F434D5052BD4CA91E0C09D07D2&#x9;6.8&#x9;https://vulners.com/httpd/HTTPD:21BDE4F434D5052BD4CA91E0C09D07D2&#xa;    &#x9;EDB-ID:34133&#x9;6.8&#x9;https://vulners.com/exploitdb/EDB-ID:34133&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-22451&#x9;6.8&#x9;https://vulners.com/zdt/1337DAY-ID-22451&#x9;*EXPLOIT*&#xa;    &#x9;SSV:11568&#x9;6.4&#x9;https://vulners.com/seebug/SSV:11568&#x9;*EXPLOIT*&#xa;    &#x9;HTTPD:B701C338AA930AF4DE0D8B2379870502&#x9;6.4&#x9;https://vulners.com/httpd/HTTPD:B701C338AA930AF4DE0D8B2379870502&#xa;    &#x9;HTTPD:99188FFDCAF9C4932D00C218A2E58EC7&#x9;6.4&#x9;https://vulners.com/httpd/HTTPD:99188FFDCAF9C4932D00C218A2E58EC7&#xa;    &#x9;HTTPD:6CDB2A9E0FE8F669CBF696FF6236E4B9&#x9;6.4&#x9;https://vulners.com/httpd/HTTPD:6CDB2A9E0FE8F669CBF696FF6236E4B9&#xa;    &#x9;HTTPD:5B30935BE8E460D46298C8DF982C74C5&#x9;6.4&#x9;https://vulners.com/httpd/HTTPD:5B30935BE8E460D46298C8DF982C74C5&#xa;    &#x9;SSV:60788&#x9;5.1&#x9;https://vulners.com/seebug/SSV:60788&#x9;*EXPLOIT*&#xa;    &#x9;HTTPD:F292DF1CEE1729E4240D1D62A10F5D32&#x9;5.1&#x9;https://vulners.com/httpd/HTTPD:F292DF1CEE1729E4240D1D62A10F5D32&#xa;    &#x9;HTTPD:A150D0DB5D09A9DD514E447CB7B8B2C8&#x9;5.1&#x9;https://vulners.com/httpd/HTTPD:A150D0DB5D09A9DD514E447CB7B8B2C8&#xa;    &#x9;HTTPD:7F0E0FC1918FB566008F71DECFC1018C&#x9;5.1&#x9;https://vulners.com/httpd/HTTPD:7F0E0FC1918FB566008F71DECFC1018C&#xa;    &#x9;HTTPD:6FFB774C5FC109DE7BF39B5539E1396F&#x9;5.1&#x9;https://vulners.com/httpd/HTTPD:6FFB774C5FC109DE7BF39B5539E1396F&#xa;    &#x9;HTTPD:165F07A887CF324D4FCE2FE811384166&#x9;5.1&#x9;https://vulners.com/httpd/HTTPD:165F07A887CF324D4FCE2FE811384166&#xa;    &#x9;SSV:96537&#x9;5.0&#x9;https://vulners.com/seebug/SSV:96537&#x9;*EXPLOIT*&#xa;    &#x9;SSV:62058&#x9;5.0&#x9;https://vulners.com/seebug/SSV:62058&#x9;*EXPLOIT*&#xa;    &#x9;SSV:61874&#x9;5.0&#x9;https://vulners.com/seebug/SSV:61874&#x9;*EXPLOIT*&#xa;    &#x9;SSV:20993&#x9;5.0&#x9;https://vulners.com/seebug/SSV:20993&#x9;*EXPLOIT*&#xa;    &#x9;SSV:20979&#x9;5.0&#x9;https://vulners.com/seebug/SSV:20979&#x9;*EXPLOIT*&#xa;    &#x9;SSV:20969&#x9;5.0&#x9;https://vulners.com/seebug/SSV:20969&#x9;*EXPLOIT*&#xa;    &#x9;SSV:19592&#x9;5.0&#x9;https://vulners.com/seebug/SSV:19592&#x9;*EXPLOIT*&#xa;    &#x9;SSV:15137&#x9;5.0&#x9;https://vulners.com/seebug/SSV:15137&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:105672&#x9;5.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:105672&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:105591&#x9;5.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:105591&#x9;*EXPLOIT*&#xa;    &#x9;MSF:AUXILIARY/SCANNER/HTTP/REWRITE_PROXY_BYPASS&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:AUXILIARY/SCANNER/HTTP/REWRITE_PROXY_BYPASS&#x9;*EXPLOIT*&#xa;    &#x9;MSF:AUXILIARY/SCANNER/HTTP/APACHE_OPTIONSBLEED&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:AUXILIARY/SCANNER/HTTP/APACHE_OPTIONSBLEED&#x9;*EXPLOIT*&#xa;    &#x9;HTTPD:FF36F150BEDE06DDF5F128FEFF145441&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:FF36F150BEDE06DDF5F128FEFF145441&#xa;    &#x9;HTTPD:FDE6D747713B6B9D98F74AC2CD3A4CA7&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:FDE6D747713B6B9D98F74AC2CD3A4CA7&#xa;    &#x9;HTTPD:F7938D7CBFBE7A5CE9DE13402D31A1CA&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:F7938D7CBFBE7A5CE9DE13402D31A1CA&#xa;    &#x9;HTTPD:EEE8EF011043502558E000564EB457E1&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:EEE8EF011043502558E000564EB457E1&#xa;    &#x9;HTTPD:DEAF583F8CA462E428A86AC329A3A9BA&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:DEAF583F8CA462E428A86AC329A3A9BA&#xa;    &#x9;HTTPD:DAE051C6677C80FCF3FB8278C4DEBA9E&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:DAE051C6677C80FCF3FB8278C4DEBA9E&#xa;    &#x9;HTTPD:D7A3FCAF9D3FC64C35D010068C776D56&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:D7A3FCAF9D3FC64C35D010068C776D56&#xa;    &#x9;HTTPD:C4C2FA03C308FCF3A86EF1B2410DD220&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:C4C2FA03C308FCF3A86EF1B2410DD220&#xa;    &#x9;HTTPD:C13A31094C087EBE641E39809EAB6561&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:C13A31094C087EBE641E39809EAB6561&#xa;    &#x9;HTTPD:BC364897116E3F1036A98B2AC7EAD22F&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:BC364897116E3F1036A98B2AC7EAD22F&#xa;    &#x9;HTTPD:B401E293B5244BCB5C4A4751BFAFE869&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:B401E293B5244BCB5C4A4751BFAFE869&#xa;    &#x9;HTTPD:AA72D9B6F58E19B881EF05A5456DBC50&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:AA72D9B6F58E19B881EF05A5456DBC50&#xa;    &#x9;HTTPD:AA5F8228C297859EE599A23F56BA394E&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:AA5F8228C297859EE599A23F56BA394E&#xa;    &#x9;HTTPD:A7D2C2ADE6383E3CCF8DF1573630F997&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:A7D2C2ADE6383E3CCF8DF1573630F997&#xa;    &#x9;HTTPD:A524D631D92D34A98F278942749ECB13&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:A524D631D92D34A98F278942749ECB13&#xa;    &#x9;HTTPD:87EE77820F0DC76234E22CB724ACA09D&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:87EE77820F0DC76234E22CB724ACA09D&#xa;    &#x9;HTTPD:8533A90266872F140CC97CA384EE7E43&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:8533A90266872F140CC97CA384EE7E43&#xa;    &#x9;HTTPD:824D39D8A30F1234C966CBDA41E1C446&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:824D39D8A30F1234C966CBDA41E1C446&#xa;    &#x9;HTTPD:6BA9F473439E906A00BD5A98776E6933&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:6BA9F473439E906A00BD5A98776E6933&#xa;    &#x9;HTTPD:62C816876F31B66A0ABB9350EAB1B165&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:62C816876F31B66A0ABB9350EAB1B165&#xa;    &#x9;HTTPD:624F5487666F9D8F639D9C3A3BD39864&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:624F5487666F9D8F639D9C3A3BD39864&#xa;    &#x9;HTTPD:5FF970F5C0AD6104342E6861C3AF5222&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:5FF970F5C0AD6104342E6861C3AF5222&#xa;    &#x9;HTTPD:5E8FDC2B1B06CFEB0EEC2A5BA99A0EB1&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:5E8FDC2B1B06CFEB0EEC2A5BA99A0EB1&#xa;    &#x9;HTTPD:5D6E315A1B98558C0DF8CBE51264FBA5&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:5D6E315A1B98558C0DF8CBE51264FBA5&#xa;    &#x9;HTTPD:5CBB2FE29DAB23F81203059931DCD49C&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:5CBB2FE29DAB23F81203059931DCD49C&#xa;    &#x9;HTTPD:5BAD9B11C0028C7342D6BDDB6A6FC575&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:5BAD9B11C0028C7342D6BDDB6A6FC575&#xa;    &#x9;HTTPD:4F68EEF9C11411528D77F80B7E27BF5B&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:4F68EEF9C11411528D77F80B7E27BF5B&#xa;    &#x9;HTTPD:4BDCA6687A88D28DCE2DECA546DB42FC&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:4BDCA6687A88D28DCE2DECA546DB42FC&#xa;    &#x9;HTTPD:40EAA53A399FC5034AA6AF618C0F5EFF&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:40EAA53A399FC5034AA6AF618C0F5EFF&#xa;    &#x9;HTTPD:2ECBF68DD3E48FC7EEF7BBD872792B9E&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:2ECBF68DD3E48FC7EEF7BBD872792B9E&#xa;    &#x9;HTTPD:19BD420E36E45C6347635B8F1E4E1159&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:19BD420E36E45C6347635B8F1E4E1159&#xa;    &#x9;HTTPD:0882B6DEC7C44C90864087E934E83A14&#x9;5.0&#x9;https://vulners.com/httpd/HTTPD:0882B6DEC7C44C90864087E934E83A14&#xa;    &#x9;EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D&#x9;5.0&#x9;https://vulners.com/exploitpack/EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:460143F0ACAE117DD79BD75EDFDA154B&#x9;5.0&#x9;https://vulners.com/exploitpack/EXPLOITPACK:460143F0ACAE117DD79BD75EDFDA154B&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:17969&#x9;5.0&#x9;https://vulners.com/exploitdb/EDB-ID:17969&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-28573&#x9;5.0&#x9;https://vulners.com/zdt/1337DAY-ID-28573&#x9;*EXPLOIT*&#xa;    &#x9;SSV:11668&#x9;4.9&#x9;https://vulners.com/seebug/SSV:11668&#x9;*EXPLOIT*&#xa;    &#x9;SSV:11501&#x9;4.9&#x9;https://vulners.com/seebug/SSV:11501&#x9;*EXPLOIT*&#xa;    &#x9;HTTPD:BF4AC3838A525A5586D2635616F83B3E&#x9;4.9&#x9;https://vulners.com/httpd/HTTPD:BF4AC3838A525A5586D2635616F83B3E&#xa;    &#x9;HTTPD:B50C2BDA6A4C5CD7D3B4D604ECB796ED&#x9;4.9&#x9;https://vulners.com/httpd/HTTPD:B50C2BDA6A4C5CD7D3B4D604ECB796ED&#xa;    &#x9;SSV:30024&#x9;4.6&#x9;https://vulners.com/seebug/SSV:30024&#x9;*EXPLOIT*&#xa;    &#x9;HTTPD:98531A1B4917D4CDD88FDEF74307A1F3&#x9;4.6&#x9;https://vulners.com/httpd/HTTPD:98531A1B4917D4CDD88FDEF74307A1F3&#xa;    &#x9;HTTPD:8BA47632F35C9AB31E24EEFA64CB532A&#x9;4.6&#x9;https://vulners.com/httpd/HTTPD:8BA47632F35C9AB31E24EEFA64CB532A&#xa;    &#x9;EDB-ID:41768&#x9;4.6&#x9;https://vulners.com/exploitdb/EDB-ID:41768&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-27465&#x9;4.6&#x9;https://vulners.com/zdt/1337DAY-ID-27465&#x9;*EXPLOIT*&#xa;    &#x9;SSV:23169&#x9;4.4&#x9;https://vulners.com/seebug/SSV:23169&#x9;*EXPLOIT*&#xa;    &#x9;HTTPD:560EB66BD0C9D4921E114954F57484F0&#x9;4.4&#x9;https://vulners.com/httpd/HTTPD:560EB66BD0C9D4921E114954F57484F0&#xa;    &#x9;HTTPD:19058D084C7C00E6FB6A3AD068C9416B&#x9;4.4&#x9;https://vulners.com/httpd/HTTPD:19058D084C7C00E6FB6A3AD068C9416B&#xa;    &#x9;EDB-ID:41769&#x9;4.4&#x9;https://vulners.com/exploitdb/EDB-ID:41769&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-27473&#x9;4.4&#x9;https://vulners.com/zdt/1337DAY-ID-27473&#x9;*EXPLOIT*&#xa;    &#x9;SSV:60905&#x9;4.3&#x9;https://vulners.com/seebug/SSV:60905&#x9;*EXPLOIT*&#xa;    &#x9;SSV:60657&#x9;4.3&#x9;https://vulners.com/seebug/SSV:60657&#x9;*EXPLOIT*&#xa;    &#x9;SSV:60653&#x9;4.3&#x9;https://vulners.com/seebug/SSV:60653&#x9;*EXPLOIT*&#xa;    &#x9;SSV:60345&#x9;4.3&#x9;https://vulners.com/seebug/SSV:60345&#x9;*EXPLOIT*&#xa;    &#x9;SSV:4786&#x9;4.3&#x9;https://vulners.com/seebug/SSV:4786&#x9;*EXPLOIT*&#xa;    &#x9;SSV:3804&#x9;4.3&#x9;https://vulners.com/seebug/SSV:3804&#x9;*EXPLOIT*&#xa;    &#x9;SSV:30056&#x9;4.3&#x9;https://vulners.com/seebug/SSV:30056&#x9;*EXPLOIT*&#xa;    &#x9;SSV:24250&#x9;4.3&#x9;https://vulners.com/seebug/SSV:24250&#x9;*EXPLOIT*&#xa;    &#x9;SSV:20555&#x9;4.3&#x9;https://vulners.com/seebug/SSV:20555&#x9;*EXPLOIT*&#xa;    &#x9;SSV:19320&#x9;4.3&#x9;https://vulners.com/seebug/SSV:19320&#x9;*EXPLOIT*&#xa;    &#x9;SSV:11558&#x9;4.3&#x9;https://vulners.com/seebug/SSV:11558&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:109284&#x9;4.3&#x9;https://vulners.com/packetstorm/PACKETSTORM:109284&#x9;*EXPLOIT*&#xa;    &#x9;HTTPD:FD6AF9837BB4BE1B6AD0591EF7C0FD0C&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:FD6AF9837BB4BE1B6AD0591EF7C0FD0C&#xa;    &#x9;HTTPD:F915F9F6E76945F3AAD5C388A33DB861&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:F915F9F6E76945F3AAD5C388A33DB861&#xa;    &#x9;HTTPD:D94ACD37B5627A621B2D592BD44873F2&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:D94ACD37B5627A621B2D592BD44873F2&#xa;    &#x9;HTTPD:D3771ADF73305061788086FA7ECC74F0&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:D3771ADF73305061788086FA7ECC74F0&#xa;    &#x9;HTTPD:B59ABFE21648992992E0F3E6F9B79EC6&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:B59ABFE21648992992E0F3E6F9B79EC6&#xa;    &#x9;HTTPD:B090F624D6E5C8D80EAC520EE315082F&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:B090F624D6E5C8D80EAC520EE315082F&#xa;    &#x9;HTTPD:AEC535E4694ACC7E97FCD2C233D6508F&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:AEC535E4694ACC7E97FCD2C233D6508F&#xa;    &#x9;HTTPD:A8776CC416A57297EB0ADA2201F69815&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:A8776CC416A57297EB0ADA2201F69815&#xa;    &#x9;HTTPD:A169FD52E405587248030E67BA381FBE&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:A169FD52E405587248030E67BA381FBE&#xa;    &#x9;HTTPD:97C3060A217B600286CA70F961A66921&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:97C3060A217B600286CA70F961A66921&#xa;    &#x9;HTTPD:8AFFF3B295361F9F478E32BCB2DF6BDD&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:8AFFF3B295361F9F478E32BCB2DF6BDD&#xa;    &#x9;HTTPD:88E68CACB31D67F6D6972262B72F26CE&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:88E68CACB31D67F6D6972262B72F26CE&#xa;    &#x9;HTTPD:7EEBAA4D66F7F678F1A9449C859131D8&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:7EEBAA4D66F7F678F1A9449C859131D8&#xa;    &#x9;HTTPD:674C5F61105615D84BCA1BB93F6745A7&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:674C5F61105615D84BCA1BB93F6745A7&#xa;    &#x9;HTTPD:4ADCC52865BD0B6B8394A1B41D13A483&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:4ADCC52865BD0B6B8394A1B41D13A483&#xa;    &#x9;HTTPD:4979B5C50BFE930EB922EF4650B13100&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:4979B5C50BFE930EB922EF4650B13100&#xa;    &#x9;HTTPD:4312651F86EAC231454F213850551A72&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:4312651F86EAC231454F213850551A72&#xa;    &#x9;HTTPD:2ADBA0EAB3212DA4AB8E7A874BBA58E5&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:2ADBA0EAB3212DA4AB8E7A874BBA58E5&#xa;    &#x9;HTTPD:267D87D7598A6B9AF1BDE6F51188D387&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:267D87D7598A6B9AF1BDE6F51188D387&#xa;    &#x9;HTTPD:1C2FBBF56925162ED41A62B394B7E0BD&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:1C2FBBF56925162ED41A62B394B7E0BD&#xa;    &#x9;HTTPD:15C9E09D3AB1588833F64CA27DD9FD97&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:15C9E09D3AB1588833F64CA27DD9FD97&#xa;    &#x9;HTTPD:076997F5615ACE42B69DAE371E30BC2D&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:076997F5615ACE42B69DAE371E30BC2D&#xa;    &#x9;HTTPD:0169161BC342AB6EF50252FEDA7025F0&#x9;4.3&#x9;https://vulners.com/httpd/HTTPD:0169161BC342AB6EF50252FEDA7025F0&#xa;    &#x9;EXPLOITPACK:FDCB3D93694E48CD5EE27CE55D6801DE&#x9;4.3&#x9;https://vulners.com/exploitpack/EXPLOITPACK:FDCB3D93694E48CD5EE27CE55D6801DE&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:36352&#x9;4.3&#x9;https://vulners.com/exploitdb/EDB-ID:36352&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:35738&#x9;4.3&#x9;https://vulners.com/exploitdb/EDB-ID:35738&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:18442&#x9;4.3&#x9;https://vulners.com/exploitdb/EDB-ID:18442&#x9;*EXPLOIT*&#xa;    &#x9;SSV:12628&#x9;2.6&#x9;https://vulners.com/seebug/SSV:12628&#x9;*EXPLOIT*&#xa;    &#x9;HTTPD:CC8913BFA5F23A87E08D0E9328F2960A&#x9;2.6&#x9;https://vulners.com/httpd/HTTPD:CC8913BFA5F23A87E08D0E9328F2960A&#xa;    &#x9;HTTPD:C14810CA3C292B291126AED687814686&#x9;2.6&#x9;https://vulners.com/httpd/HTTPD:C14810CA3C292B291126AED687814686&#xa;    &#x9;HTTPD:7A3FC40A88A2C336D94097C124BCFB25&#x9;2.6&#x9;https://vulners.com/httpd/HTTPD:7A3FC40A88A2C336D94097C124BCFB25&#xa;    &#x9;HTTPD:70F666C49D9C9D9808BCA47FF85369B9&#x9;2.6&#x9;https://vulners.com/httpd/HTTPD:70F666C49D9C9D9808BCA47FF85369B9&#xa;    &#x9;HTTPD:473BEFEDFE8F6D64C2FACEE038F2B7CE&#x9;2.6&#x9;https://vulners.com/httpd/HTTPD:473BEFEDFE8F6D64C2FACEE038F2B7CE&#xa;    &#x9;HTTPD:271670E36487CE7F3F458E267535FC88&#x9;2.6&#x9;https://vulners.com/httpd/HTTPD:271670E36487CE7F3F458E267535FC88&#xa;    &#x9;EDB-ID:42745&#x9;0.0&#x9;https://vulners.com/exploitdb/EDB-ID:42745&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-23169&#x9;0.0&#x9;https://vulners.com/zdt/1337DAY-ID-23169&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-12139&#x9;0.0&#x9;https://vulners.com/zdt/1337DAY-ID-12139&#x9;*EXPLOIT*"><table key="Apache httpd 2.2.8">
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:69341</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:19282</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:19236</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:11999</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:86964</elem>
+<elem key="type">packetstorm</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:AUXILIARY/DOS/HTTP/APACHE_MOD_ISAPI</elem>
+<elem key="type">metasploit</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:8696B75D7F345F7B69DA132B47E39EB5</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:74DC0313423435D4D7DC7943E60495A8</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:6A0D341DB569FACF7F8A423D96B149BD</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:4901C61501FDBE6F1DBAF673D472D534</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EXPLOITPACK:30ED468EC8BD5B71B2CB93825A852B80</elem>
+<elem key="type">exploitpack</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:14288</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:11650</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:72403</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:2820</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:26043</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:20899</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:11569</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:126851</elem>
+<elem key="type">packetstorm</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:123527</elem>
+<elem key="type">packetstorm</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:122962</elem>
+<elem key="type">packetstorm</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:AUXILIARY/DOS/HTTP/APACHE_RANGE_DOS</elem>
+<elem key="type">metasploit</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:B9296B1CB879B279D132192A733A6288</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:B42B1A6F1E10C59032AD49CAEF5BC919</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:15D329E832BC7E516FAEC91A287BD5A8</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EXPLOITPACK:186B5FCF5C57B52642E62C06BABC6F83</elem>
+<elem key="type">exploitpack</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:8842</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:18221</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:17696</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-21170</elem>
+<elem key="type">zdt</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:12673</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:12626</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:F564BBA32AA088833DA032B7EB77CA29</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:E74D6161229FA3D00A1783E6C3426C5D</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:C7D2DA1ACB016A5220CA8E74647BED26</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:8F00FB1DD7567228376803FEDB0EC3B6</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:7EEE138FD834328B3FC98E4B7FCAD266</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:3C869ED31997C0F748E2CD4FE85D0DA8</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:3659017FAAE50804F97DA8236B92130D</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:1EFC9FFF0E161886B1F765B7E865B6B2</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:19C7B2BF273EC2E86BFD911FFB87CF03</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:143F3A43D871E3AFFF956DB1049A6A2A</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.1</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:11802</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">7.1</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:11762</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">7.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:DEDE3CEB9599A8A299F93A7DF12C724A</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:C538A9873CDC035E18FA06D6A02323B5</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:9ABDC7E294E94BEDA47AC9B86645BD13</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">7.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:4443A36D55E9A7A65067E1A20A4C3AAE</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">6.9</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60427</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">6.9</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60386</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">6.9</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60069</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">6.9</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:5E9A21F9EC4C8014D276CAE137A8806D</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">6.9</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:403A74F009AB14FE702EA7E39E828C52</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:127546</elem>
+<elem key="type">packetstorm</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:E3EA50E892151D4F57BF7B9A57DDA94D</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:21BDE4F434D5052BD4CA91E0C09D07D2</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:34133</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-22451</elem>
+<elem key="type">zdt</elem>
+</table>
+<table>
+<elem key="cvss">6.4</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:11568</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">6.4</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:B701C338AA930AF4DE0D8B2379870502</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">6.4</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:99188FFDCAF9C4932D00C218A2E58EC7</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">6.4</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:6CDB2A9E0FE8F669CBF696FF6236E4B9</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">6.4</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:5B30935BE8E460D46298C8DF982C74C5</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.1</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60788</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:F292DF1CEE1729E4240D1D62A10F5D32</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:A150D0DB5D09A9DD514E447CB7B8B2C8</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:7F0E0FC1918FB566008F71DECFC1018C</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:6FFB774C5FC109DE7BF39B5539E1396F</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:165F07A887CF324D4FCE2FE811384166</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:96537</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:62058</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:61874</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:20993</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:20979</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:20969</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:19592</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:15137</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:105672</elem>
+<elem key="type">packetstorm</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:105591</elem>
+<elem key="type">packetstorm</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:AUXILIARY/SCANNER/HTTP/REWRITE_PROXY_BYPASS</elem>
+<elem key="type">metasploit</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:AUXILIARY/SCANNER/HTTP/APACHE_OPTIONSBLEED</elem>
+<elem key="type">metasploit</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:FF36F150BEDE06DDF5F128FEFF145441</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:FDE6D747713B6B9D98F74AC2CD3A4CA7</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:F7938D7CBFBE7A5CE9DE13402D31A1CA</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:EEE8EF011043502558E000564EB457E1</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:DEAF583F8CA462E428A86AC329A3A9BA</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:DAE051C6677C80FCF3FB8278C4DEBA9E</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:D7A3FCAF9D3FC64C35D010068C776D56</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:C4C2FA03C308FCF3A86EF1B2410DD220</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:C13A31094C087EBE641E39809EAB6561</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:BC364897116E3F1036A98B2AC7EAD22F</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:B401E293B5244BCB5C4A4751BFAFE869</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:AA72D9B6F58E19B881EF05A5456DBC50</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:AA5F8228C297859EE599A23F56BA394E</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:A7D2C2ADE6383E3CCF8DF1573630F997</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:A524D631D92D34A98F278942749ECB13</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:87EE77820F0DC76234E22CB724ACA09D</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:8533A90266872F140CC97CA384EE7E43</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:824D39D8A30F1234C966CBDA41E1C446</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:6BA9F473439E906A00BD5A98776E6933</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:62C816876F31B66A0ABB9350EAB1B165</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:624F5487666F9D8F639D9C3A3BD39864</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:5FF970F5C0AD6104342E6861C3AF5222</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:5E8FDC2B1B06CFEB0EEC2A5BA99A0EB1</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:5D6E315A1B98558C0DF8CBE51264FBA5</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:5CBB2FE29DAB23F81203059931DCD49C</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:5BAD9B11C0028C7342D6BDDB6A6FC575</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:4F68EEF9C11411528D77F80B7E27BF5B</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:4BDCA6687A88D28DCE2DECA546DB42FC</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:40EAA53A399FC5034AA6AF618C0F5EFF</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:2ECBF68DD3E48FC7EEF7BBD872792B9E</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:19BD420E36E45C6347635B8F1E4E1159</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:0882B6DEC7C44C90864087E934E83A14</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D</elem>
+<elem key="type">exploitpack</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EXPLOITPACK:460143F0ACAE117DD79BD75EDFDA154B</elem>
+<elem key="type">exploitpack</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:17969</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-28573</elem>
+<elem key="type">zdt</elem>
+</table>
+<table>
+<elem key="cvss">4.9</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:11668</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.9</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:11501</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.9</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:BF4AC3838A525A5586D2635616F83B3E</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.9</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:B50C2BDA6A4C5CD7D3B4D604ECB796ED</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.6</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:30024</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:98531A1B4917D4CDD88FDEF74307A1F3</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:8BA47632F35C9AB31E24EEFA64CB532A</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.6</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:41768</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">4.6</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-27465</elem>
+<elem key="type">zdt</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:23169</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:560EB66BD0C9D4921E114954F57484F0</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:19058D084C7C00E6FB6A3AD068C9416B</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:41769</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-27473</elem>
+<elem key="type">zdt</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60905</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60657</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60653</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60345</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:4786</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:3804</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:30056</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:24250</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:20555</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:19320</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:11558</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:109284</elem>
+<elem key="type">packetstorm</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:FD6AF9837BB4BE1B6AD0591EF7C0FD0C</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:F915F9F6E76945F3AAD5C388A33DB861</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:D94ACD37B5627A621B2D592BD44873F2</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:D3771ADF73305061788086FA7ECC74F0</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:B59ABFE21648992992E0F3E6F9B79EC6</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:B090F624D6E5C8D80EAC520EE315082F</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:AEC535E4694ACC7E97FCD2C233D6508F</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:A8776CC416A57297EB0ADA2201F69815</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:A169FD52E405587248030E67BA381FBE</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:97C3060A217B600286CA70F961A66921</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:8AFFF3B295361F9F478E32BCB2DF6BDD</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:88E68CACB31D67F6D6972262B72F26CE</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:7EEBAA4D66F7F678F1A9449C859131D8</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:674C5F61105615D84BCA1BB93F6745A7</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:4ADCC52865BD0B6B8394A1B41D13A483</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:4979B5C50BFE930EB922EF4650B13100</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:4312651F86EAC231454F213850551A72</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:2ADBA0EAB3212DA4AB8E7A874BBA58E5</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:267D87D7598A6B9AF1BDE6F51188D387</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:1C2FBBF56925162ED41A62B394B7E0BD</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:15C9E09D3AB1588833F64CA27DD9FD97</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:076997F5615ACE42B69DAE371E30BC2D</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:0169161BC342AB6EF50252FEDA7025F0</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EXPLOITPACK:FDCB3D93694E48CD5EE27CE55D6801DE</elem>
+<elem key="type">exploitpack</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:36352</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:35738</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:18442</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">2.6</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:12628</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">2.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:CC8913BFA5F23A87E08D0E9328F2960A</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">2.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:C14810CA3C292B291126AED687814686</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">2.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:7A3FC40A88A2C336D94097C124BCFB25</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">2.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:70F666C49D9C9D9808BCA47FF85369B9</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">2.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:473BEFEDFE8F6D64C2FACEE038F2B7CE</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">2.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">HTTPD:271670E36487CE7F3F458E267535FC88</elem>
+<elem key="type">httpd</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:42745</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-23169</elem>
+<elem key="type">zdt</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">1337DAY-ID-12139</elem>
+<elem key="type">zdt</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rpcbind" version="2" extrainfo="RPC #100000" method="probed" conf="10"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-webexec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-webexec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="512"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="exec" method="table" conf="3"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="513"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="login" product="OpenBSD or Solaris rlogind" method="probed" conf="10"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="514"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="1099"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="java-rmi" product="GNU Classpath grmiregistry" method="probed" conf="10"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="rmi-vuln-classloader" output="&#xa;  VULNERABLE:&#xa;  RMI registry default configuration remote code execution vulnerability&#xa;    State: VULNERABLE&#xa;      Default configuration of RMI registry allows loading classes from remote URLs which can lead to remote code execution.&#xa;      &#xa;    References:&#xa;      https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/misc/java_rmi_server.rb&#xa;"><table key="NMAP-3">
+<elem key="title">RMI registry default configuration remote code execution vulnerability</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>Default configuration of RMI registry allows loading classes from remote URLs which can lead to remote code execution.&#xa;</elem>
+</table>
+<table key="exploit_results">
+</table>
+<table key="refs">
+<elem>https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/misc/java_rmi_server.rb</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="1524"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="bindshell" product="Metasploitable root shell" method="probed" conf="10"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="2049"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="nfs" version="2-4" extrainfo="RPC #100003" method="probed" conf="10"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="2121"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="ProFTPD" version="1.3.1" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:proftpd:proftpd:1.3.1</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="sslv2-drown" output="&#xa;"></script><script id="vulners" output="&#xa;  cpe:/a:proftpd:proftpd:1.3.1: &#xa;    &#x9;SSV:26016&#x9;9.0&#x9;https://vulners.com/seebug/SSV:26016&#x9;*EXPLOIT*&#xa;    &#x9;SSV:24282&#x9;9.0&#x9;https://vulners.com/seebug/SSV:24282&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2011-4130&#x9;9.0&#x9;https://vulners.com/cve/CVE-2011-4130&#xa;    &#x9;EDB-ID:8037&#x9;7.5&#x9;https://vulners.com/exploitdb/EDB-ID:8037&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2019-12815&#x9;7.5&#x9;https://vulners.com/cve/CVE-2019-12815&#xa;    &#x9;SSV:20226&#x9;7.1&#x9;https://vulners.com/seebug/SSV:20226&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:95517&#x9;7.1&#x9;https://vulners.com/packetstorm/PACKETSTORM:95517&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2010-3867&#x9;7.1&#x9;https://vulners.com/cve/CVE-2010-3867&#xa;    &#x9;CVE-2010-4652&#x9;6.8&#x9;https://vulners.com/cve/CVE-2010-4652&#xa;    &#x9;CVE-2009-0543&#x9;6.8&#x9;https://vulners.com/cve/CVE-2009-0543&#xa;    &#x9;SSV:12523&#x9;5.8&#x9;https://vulners.com/seebug/SSV:12523&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2009-3639&#x9;5.8&#x9;https://vulners.com/cve/CVE-2009-3639&#xa;    &#x9;EDB-ID:16129&#x9;5.0&#x9;https://vulners.com/exploitdb/EDB-ID:16129&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2019-19272&#x9;5.0&#x9;https://vulners.com/cve/CVE-2019-19272&#xa;    &#x9;CVE-2019-19271&#x9;5.0&#x9;https://vulners.com/cve/CVE-2019-19271&#xa;    &#x9;CVE-2019-19270&#x9;5.0&#x9;https://vulners.com/cve/CVE-2019-19270&#xa;    &#x9;CVE-2019-18217&#x9;5.0&#x9;https://vulners.com/cve/CVE-2019-18217&#xa;    &#x9;CVE-2016-3125&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-3125&#xa;    &#x9;CVE-2011-1137&#x9;5.0&#x9;https://vulners.com/cve/CVE-2011-1137&#xa;    &#x9;CVE-2008-7265&#x9;4.0&#x9;https://vulners.com/cve/CVE-2008-7265&#xa;    &#x9;CVE-2017-7418&#x9;2.1&#x9;https://vulners.com/cve/CVE-2017-7418&#xa;    &#x9;CVE-2012-6095&#x9;1.2&#x9;https://vulners.com/cve/CVE-2012-6095"><table key="cpe:/a:proftpd:proftpd:1.3.1">
+<table>
+<elem key="cvss">9.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:26016</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">9.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:24282</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">9.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-4130</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:8037</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-12815</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">7.1</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:20226</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">7.1</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:95517</elem>
+<elem key="type">packetstorm</elem>
+</table>
+<table>
+<elem key="cvss">7.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-3867</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-4652</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-0543</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:12523</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-3639</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:16129</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-19272</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-19271</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-19270</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-18217</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-3125</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-1137</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-7265</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">2.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-7418</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">1.2</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-6095</elem>
+<elem key="type">cve</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" product="MySQL" version="5.0.51a-3ubuntu5" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql:5.0.51a-3ubuntu5</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="vulners" output="&#xa;  cpe:/a:mysql:mysql:5.0.51a-3ubuntu5: &#xa;    &#x9;SSV:19118&#x9;8.5&#x9;https://vulners.com/seebug/SSV:19118&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:33077&#x9;8.5&#x9;https://vulners.com/exploitdb/EDB-ID:33077&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2009-2446&#x9;8.5&#x9;https://vulners.com/cve/CVE-2009-2446&#xa;    &#x9;SAINT:D505D53863BE216621FDAECA22896071&#x9;7.5&#x9;https://vulners.com/saint/SAINT:D505D53863BE216621FDAECA22896071&#x9;*EXPLOIT*&#xa;    &#x9;SAINT:A9E0BE0CEF71F1F98D3CB3E95173B3D0&#x9;7.5&#x9;https://vulners.com/saint/SAINT:A9E0BE0CEF71F1F98D3CB3E95173B3D0&#x9;*EXPLOIT*&#xa;    &#x9;SAINT:3101D21E4D8017EA5B14AF668DC39CAD&#x9;7.5&#x9;https://vulners.com/saint/SAINT:3101D21E4D8017EA5B14AF668DC39CAD&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:85678&#x9;7.5&#x9;https://vulners.com/packetstorm/PACKETSTORM:85678&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:82247&#x9;7.5&#x9;https://vulners.com/packetstorm/PACKETSTORM:82247&#x9;*EXPLOIT*&#xa;    &#x9;MSF:EXPLOIT/WINDOWS/MYSQL/MYSQL_YASSL_HELLO&#x9;7.5&#x9;https://vulners.com/metasploit/MSF:EXPLOIT/WINDOWS/MYSQL/MYSQL_YASSL_HELLO&#x9;*EXPLOIT*&#xa;    &#x9;MSF:EXPLOIT/LINUX/MYSQL/MYSQL_YASSL_HELLO&#x9;7.5&#x9;https://vulners.com/metasploit/MSF:EXPLOIT/LINUX/MYSQL/MYSQL_YASSL_HELLO&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:9953&#x9;7.5&#x9;https://vulners.com/exploitdb/EDB-ID:9953&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:16849&#x9;7.5&#x9;https://vulners.com/exploitdb/EDB-ID:16849&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:16701&#x9;7.5&#x9;https://vulners.com/exploitdb/EDB-ID:16701&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2008-0226&#x9;7.5&#x9;https://vulners.com/cve/CVE-2008-0226&#xa;    &#x9;SSV:15006&#x9;6.8&#x9;https://vulners.com/seebug/SSV:15006&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:34796&#x9;6.8&#x9;https://vulners.com/exploitdb/EDB-ID:34796&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2009-5026&#x9;6.8&#x9;https://vulners.com/cve/CVE-2009-5026&#xa;    &#x9;CVE-2009-4028&#x9;6.8&#x9;https://vulners.com/cve/CVE-2009-4028&#xa;    &#x9;SSV:19606&#x9;6.5&#x9;https://vulners.com/seebug/SSV:19606&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2010-1848&#x9;6.5&#x9;https://vulners.com/cve/CVE-2010-1848&#xa;    &#x9;SSV:19608&#x9;6.0&#x9;https://vulners.com/seebug/SSV:19608&#x9;*EXPLOIT*&#xa;    &#x9;SSV:15004&#x9;6.0&#x9;https://vulners.com/seebug/SSV:15004&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2010-1850&#x9;6.0&#x9;https://vulners.com/cve/CVE-2010-1850&#xa;    &#x9;CVE-2008-7247&#x9;6.0&#x9;https://vulners.com/cve/CVE-2008-7247&#xa;    &#x9;SSV:19607&#x9;5.0&#x9;https://vulners.com/seebug/SSV:19607&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2010-3833&#x9;5.0&#x9;https://vulners.com/cve/CVE-2010-3833&#xa;    &#x9;CVE-2010-1849&#x9;5.0&#x9;https://vulners.com/cve/CVE-2010-1849&#xa;    &#x9;SSV:3280&#x9;4.6&#x9;https://vulners.com/seebug/SSV:3280&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2008-4098&#x9;4.6&#x9;https://vulners.com/cve/CVE-2008-4098&#xa;    &#x9;CVE-2008-2079&#x9;4.6&#x9;https://vulners.com/cve/CVE-2008-2079&#xa;    &#x9;SSV:4042&#x9;4.0&#x9;https://vulners.com/seebug/SSV:4042&#x9;*EXPLOIT*&#xa;    &#x9;SSV:15090&#x9;4.0&#x9;https://vulners.com/seebug/SSV:15090&#x9;*EXPLOIT*&#xa;    &#x9;SSV:15005&#x9;4.0&#x9;https://vulners.com/seebug/SSV:15005&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:34506&#x9;4.0&#x9;https://vulners.com/exploitdb/EDB-ID:34506&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:33398&#x9;4.0&#x9;https://vulners.com/exploitdb/EDB-ID:33398&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:33397&#x9;4.0&#x9;https://vulners.com/exploitdb/EDB-ID:33397&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:32348&#x9;4.0&#x9;https://vulners.com/exploitdb/EDB-ID:32348&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2012-0490&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-0490&#xa;    &#x9;CVE-2012-0484&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-0484&#xa;    &#x9;CVE-2012-0102&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-0102&#xa;    &#x9;CVE-2012-0101&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-0101&#xa;    &#x9;CVE-2012-0087&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-0087&#xa;    &#x9;CVE-2010-3838&#x9;4.0&#x9;https://vulners.com/cve/CVE-2010-3838&#xa;    &#x9;CVE-2010-3837&#x9;4.0&#x9;https://vulners.com/cve/CVE-2010-3837&#xa;    &#x9;CVE-2010-3836&#x9;4.0&#x9;https://vulners.com/cve/CVE-2010-3836&#xa;    &#x9;CVE-2010-3834&#x9;4.0&#x9;https://vulners.com/cve/CVE-2010-3834&#xa;    &#x9;CVE-2010-3682&#x9;4.0&#x9;https://vulners.com/cve/CVE-2010-3682&#xa;    &#x9;CVE-2010-3677&#x9;4.0&#x9;https://vulners.com/cve/CVE-2010-3677&#xa;    &#x9;CVE-2009-4019&#x9;4.0&#x9;https://vulners.com/cve/CVE-2009-4019&#xa;    &#x9;CVE-2008-3963&#x9;4.0&#x9;https://vulners.com/cve/CVE-2008-3963&#xa;    &#x9;CVE-2010-1626&#x9;3.6&#x9;https://vulners.com/cve/CVE-2010-1626&#xa;    &#x9;CVE-2012-0114&#x9;3.0&#x9;https://vulners.com/cve/CVE-2012-0114&#xa;    &#x9;CVE-2012-0075&#x9;1.7&#x9;https://vulners.com/cve/CVE-2012-0075"><table key="cpe:/a:mysql:mysql:5.0.51a-3ubuntu5">
+<table>
+<elem key="cvss">8.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:19118</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">8.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:33077</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">8.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-2446</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SAINT:D505D53863BE216621FDAECA22896071</elem>
+<elem key="type">saint</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SAINT:A9E0BE0CEF71F1F98D3CB3E95173B3D0</elem>
+<elem key="type">saint</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SAINT:3101D21E4D8017EA5B14AF668DC39CAD</elem>
+<elem key="type">saint</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:85678</elem>
+<elem key="type">packetstorm</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:82247</elem>
+<elem key="type">packetstorm</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:EXPLOIT/WINDOWS/MYSQL/MYSQL_YASSL_HELLO</elem>
+<elem key="type">metasploit</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:EXPLOIT/LINUX/MYSQL/MYSQL_YASSL_HELLO</elem>
+<elem key="type">metasploit</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:9953</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:16849</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:16701</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-0226</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:15006</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:34796</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-5026</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-4028</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:19606</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-1848</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:19608</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">6.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:15004</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">6.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-1850</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-7247</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:19607</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-3833</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-1849</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.6</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:3280</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-4098</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-2079</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:4042</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:15090</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:15005</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:34506</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:33398</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:33397</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:32348</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0490</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0484</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0102</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0101</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0087</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-3838</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-3837</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-3836</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-3834</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-3682</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-3677</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-4019</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-3963</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">3.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-1626</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">3.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0114</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">1.7</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0075</elem>
+<elem key="type">cve</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="5432"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="postgresql" product="PostgreSQL DB" version="8.3.0 - 8.3.7" method="probed" conf="10"><cpe>cpe:/a:postgresql:postgresql:8.3</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="ssl-ccs-injection" output="&#xa;  VULNERABLE:&#xa;  SSL/TLS MITM vulnerability (CCS Injection)&#xa;    State: VULNERABLE&#xa;    Risk factor: High&#xa;      OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h&#xa;      does not properly restrict processing of ChangeCipherSpec messages,&#xa;      which allows man-in-the-middle attackers to trigger use of a zero&#xa;      length master key in certain OpenSSL-to-OpenSSL communications, and&#xa;      consequently hijack sessions or obtain sensitive information, via&#xa;      a crafted TLS handshake, aka the &quot;CCS Injection&quot; vulnerability.&#xa;          &#xa;    References:&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224&#xa;      http://www.openssl.org/news/secadv_20140605.txt&#xa;      http://www.cvedetails.com/cve/2014-0224&#xa;"><table key="NMAP-31">
+<elem key="title">SSL/TLS MITM vulnerability (CCS Injection)</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h&#xa;does not properly restrict processing of ChangeCipherSpec messages,&#xa;which allows man-in-the-middle attackers to trigger use of a zero&#xa;length master key in certain OpenSSL-to-OpenSSL communications, and&#xa;consequently hijack sessions or obtain sensitive information, via&#xa;a crafted TLS handshake, aka the &quot;CCS Injection&quot; vulnerability.&#xa;    </elem>
+</table>
+<table key="refs">
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224</elem>
+<elem>http://www.openssl.org/news/secadv_20140605.txt</elem>
+<elem>http://www.cvedetails.com/cve/2014-0224</elem>
+</table>
+</table>
+</script><script id="ssl-dh-params" output="&#xa;  VULNERABLE:&#xa;  Diffie-Hellman Key Exchange Insufficient Group Strength&#xa;    State: VULNERABLE&#xa;      Transport Layer Security (TLS) services that use Diffie-Hellman groups&#xa;      of insufficient strength, especially those using one of a few commonly&#xa;      shared groups, may be susceptible to passive eavesdropping attacks.&#xa;    Check results:&#xa;      WEAK DH GROUP 1&#xa;            Cipher Suite: TLS_DHE_RSA_WITH_AES_256_CBC_SHA&#xa;            Modulus Type: Safe prime&#xa;            Modulus Source: Unknown/Custom-generated&#xa;            Modulus Length: 1024&#xa;            Generator Length: 8&#xa;            Public Key Length: 1024&#xa;    References:&#xa;      https://weakdh.org&#xa;"><table key="NMAP-34">
+<elem key="title">Diffie-Hellman Key Exchange Insufficient Group Strength</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>Transport Layer Security (TLS) services that use Diffie-Hellman groups&#xa;of insufficient strength, especially those using one of a few commonly&#xa;shared groups, may be susceptible to passive eavesdropping attacks.</elem>
+</table>
+<table key="check_results">
+<elem>WEAK DH GROUP 1&#xa;      Cipher Suite: TLS_DHE_RSA_WITH_AES_256_CBC_SHA&#xa;      Modulus Type: Safe prime&#xa;      Modulus Source: Unknown/Custom-generated&#xa;      Modulus Length: 1024&#xa;      Generator Length: 8&#xa;      Public Key Length: 1024</elem>
+</table>
+<table key="refs">
+<elem>https://weakdh.org</elem>
+</table>
+</table>
+</script><script id="ssl-poodle" output="&#xa;  VULNERABLE:&#xa;  SSL POODLE information leak&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2014-3566  BID:70574&#xa;          The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other&#xa;          products, uses nondeterministic CBC padding, which makes it easier&#xa;          for man-in-the-middle attackers to obtain cleartext data via a&#xa;          padding-oracle attack, aka the &quot;POODLE&quot; issue.&#xa;    Disclosure date: 2014-10-14&#xa;    Check results:&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA&#xa;    References:&#xa;      https://www.securityfocus.com/bid/70574&#xa;      https://www.imperialviolet.org/2014/10/14/poodle.html&#xa;      https://www.openssl.org/~bodo/ssl-poodle.pdf&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566&#xa;"><table key="CVE-2014-3566">
+<elem key="title">SSL POODLE information leak</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2014-3566</elem>
+<elem>BID:70574</elem>
+</table>
+<table key="description">
+<elem>    The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other&#xa;    products, uses nondeterministic CBC padding, which makes it easier&#xa;    for man-in-the-middle attackers to obtain cleartext data via a&#xa;    padding-oracle attack, aka the &quot;POODLE&quot; issue.</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="day">14</elem>
+<elem key="month">10</elem>
+<elem key="year">2014</elem>
+</table>
+</table>
+<elem key="disclosure">2014-10-14</elem>
+<table key="check_results">
+<elem>TLS_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+<table key="refs">
+<elem>https://www.securityfocus.com/bid/70574</elem>
+<elem>https://www.imperialviolet.org/2014/10/14/poodle.html</elem>
+<elem>https://www.openssl.org/~bodo/ssl-poodle.pdf</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566</elem>
+</table>
+</table>
+</script><script id="sslv2-drown" output="&#xa;"></script><script id="vulners" output="&#xa;  cpe:/a:postgresql:postgresql:8.3: &#xa;    &#x9;SSV:60718&#x9;10.0&#x9;https://vulners.com/seebug/SSV:60718&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2013-1903&#x9;10.0&#x9;https://vulners.com/cve/CVE-2013-1903&#xa;    &#x9;CVE-2013-1902&#x9;10.0&#x9;https://vulners.com/cve/CVE-2013-1902&#xa;    &#x9;SSV:30015&#x9;8.5&#x9;https://vulners.com/seebug/SSV:30015&#x9;*EXPLOIT*&#xa;    &#x9;SSV:19652&#x9;8.5&#x9;https://vulners.com/seebug/SSV:19652&#x9;*EXPLOIT*&#xa;    &#x9;POSTGRESQL:CVE-2013-1900&#x9;8.5&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2013-1900&#xa;    &#x9;POSTGRESQL:CVE-2010-1169&#x9;8.5&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2010-1169&#xa;    &#x9;CVE-2010-1447&#x9;8.5&#x9;https://vulners.com/cve/CVE-2010-1447&#xa;    &#x9;CVE-2010-1169&#x9;8.5&#x9;https://vulners.com/cve/CVE-2010-1169&#xa;    &#x9;SSV:30152&#x9;6.8&#x9;https://vulners.com/seebug/SSV:30152&#x9;*EXPLOIT*&#xa;    &#x9;POSTGRESQL:CVE-2013-0255&#x9;6.8&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2013-0255&#xa;    &#x9;POSTGRESQL:CVE-2012-0868&#x9;6.8&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2012-0868&#xa;    &#x9;POSTGRESQL:CVE-2009-3231&#x9;6.8&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2009-3231&#xa;    &#x9;CVE-2013-0255&#x9;6.8&#x9;https://vulners.com/cve/CVE-2013-0255&#xa;    &#x9;CVE-2012-0868&#x9;6.8&#x9;https://vulners.com/cve/CVE-2012-0868&#xa;    &#x9;CVE-2009-3231&#x9;6.8&#x9;https://vulners.com/cve/CVE-2009-3231&#xa;    &#x9;SSV:62083&#x9;6.5&#x9;https://vulners.com/seebug/SSV:62083&#x9;*EXPLOIT*&#xa;    &#x9;SSV:61543&#x9;6.5&#x9;https://vulners.com/seebug/SSV:61543&#x9;*EXPLOIT*&#xa;    &#x9;SSV:15153&#x9;6.5&#x9;https://vulners.com/seebug/SSV:15153&#x9;*EXPLOIT*&#xa;    &#x9;SSV:15097&#x9;6.5&#x9;https://vulners.com/seebug/SSV:15097&#x9;*EXPLOIT*&#xa;    &#x9;SSV:15095&#x9;6.5&#x9;https://vulners.com/seebug/SSV:15095&#x9;*EXPLOIT*&#xa;    &#x9;POSTGRESQL:CVE-2014-0065&#x9;6.5&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2014-0065&#xa;    &#x9;POSTGRESQL:CVE-2014-0064&#x9;6.5&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2014-0064&#xa;    &#x9;POSTGRESQL:CVE-2014-0063&#x9;6.5&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2014-0063&#xa;    &#x9;POSTGRESQL:CVE-2014-0061&#x9;6.5&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2014-0061&#xa;    &#x9;POSTGRESQL:CVE-2012-0866&#x9;6.5&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2012-0866&#xa;    &#x9;POSTGRESQL:CVE-2010-4015&#x9;6.5&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2010-4015&#xa;    &#x9;POSTGRESQL:CVE-2009-4136&#x9;6.5&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2009-4136&#xa;    &#x9;POSTGRESQL:CVE-2009-3230&#x9;6.5&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2009-3230&#xa;    &#x9;CVE-2014-0065&#x9;6.5&#x9;https://vulners.com/cve/CVE-2014-0065&#xa;    &#x9;CVE-2014-0064&#x9;6.5&#x9;https://vulners.com/cve/CVE-2014-0064&#xa;    &#x9;CVE-2014-0063&#x9;6.5&#x9;https://vulners.com/cve/CVE-2014-0063&#xa;    &#x9;CVE-2014-0061&#x9;6.5&#x9;https://vulners.com/cve/CVE-2014-0061&#xa;    &#x9;CVE-2012-0866&#x9;6.5&#x9;https://vulners.com/cve/CVE-2012-0866&#xa;    &#x9;CVE-2010-4015&#x9;6.5&#x9;https://vulners.com/cve/CVE-2010-4015&#xa;    &#x9;POSTGRESQL:CVE-2010-3433&#x9;6.0&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2010-3433&#xa;    &#x9;POSTGRESQL:CVE-2010-1170&#x9;6.0&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2010-1170&#xa;    &#x9;CVE-2010-3433&#x9;6.0&#x9;https://vulners.com/cve/CVE-2010-3433&#xa;    &#x9;CVE-2010-1170&#x9;6.0&#x9;https://vulners.com/cve/CVE-2010-1170&#xa;    &#x9;SSV:15154&#x9;5.8&#x9;https://vulners.com/seebug/SSV:15154&#x9;*EXPLOIT*&#xa;    &#x9;SSV:15096&#x9;5.8&#x9;https://vulners.com/seebug/SSV:15096&#x9;*EXPLOIT*&#xa;    &#x9;POSTGRESQL:CVE-2009-4034&#x9;5.8&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2009-4034&#xa;    &#x9;SSV:19669&#x9;5.5&#x9;https://vulners.com/seebug/SSV:19669&#x9;*EXPLOIT*&#xa;    &#x9;POSTGRESQL:CVE-2010-1975&#x9;5.5&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2010-1975&#xa;    &#x9;CVE-2010-1975&#x9;5.5&#x9;https://vulners.com/cve/CVE-2010-1975&#xa;    &#x9;SSV:61546&#x9;4.9&#x9;https://vulners.com/seebug/SSV:61546&#x9;*EXPLOIT*&#xa;    &#x9;SSV:60334&#x9;4.9&#x9;https://vulners.com/seebug/SSV:60334&#x9;*EXPLOIT*&#xa;    &#x9;POSTGRESQL:CVE-2014-0062&#x9;4.9&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2014-0062&#xa;    &#x9;POSTGRESQL:CVE-2012-3488&#x9;4.9&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2012-3488&#xa;    &#x9;CVE-2014-0062&#x9;4.9&#x9;https://vulners.com/cve/CVE-2014-0062&#xa;    &#x9;CVE-2012-3488&#x9;4.9&#x9;https://vulners.com/cve/CVE-2012-3488&#xa;    &#x9;SSV:61544&#x9;4.6&#x9;https://vulners.com/seebug/SSV:61544&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2014-0067&#x9;4.6&#x9;https://vulners.com/cve/CVE-2014-0067&#xa;    &#x9;POSTGRESQL:CVE-2012-2143&#x9;4.3&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2012-2143&#xa;    &#x9;POSTGRESQL:CVE-2012-0867&#x9;4.3&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2012-0867&#xa;    &#x9;CVE-2012-2143&#x9;4.3&#x9;https://vulners.com/cve/CVE-2012-2143&#xa;    &#x9;SSV:61547&#x9;4.0&#x9;https://vulners.com/seebug/SSV:61547&#x9;*EXPLOIT*&#xa;    &#x9;SSV:61545&#x9;4.0&#x9;https://vulners.com/seebug/SSV:61545&#x9;*EXPLOIT*&#xa;    &#x9;SSV:60335&#x9;4.0&#x9;https://vulners.com/seebug/SSV:60335&#x9;*EXPLOIT*&#xa;    &#x9;SSV:60186&#x9;4.0&#x9;https://vulners.com/seebug/SSV:60186&#x9;*EXPLOIT*&#xa;    &#x9;SSV:4928&#x9;4.0&#x9;https://vulners.com/seebug/SSV:4928&#x9;*EXPLOIT*&#xa;    &#x9;POSTGRESQL:CVE-2014-0066&#x9;4.0&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2014-0066&#xa;    &#x9;POSTGRESQL:CVE-2014-0060&#x9;4.0&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2014-0060&#xa;    &#x9;POSTGRESQL:CVE-2012-3489&#x9;4.0&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2012-3489&#xa;    &#x9;POSTGRESQL:CVE-2012-2655&#x9;4.0&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2012-2655&#xa;    &#x9;POSTGRESQL:CVE-2009-3229&#x9;4.0&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2009-3229&#xa;    &#x9;POSTGRESQL:CVE-2009-0922&#x9;4.0&#x9;https://vulners.com/postgresql/POSTGRESQL:CVE-2009-0922&#xa;    &#x9;EDB-ID:32849&#x9;4.0&#x9;https://vulners.com/exploitdb/EDB-ID:32849&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2014-0066&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-0066&#xa;    &#x9;CVE-2014-0060&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-0060&#xa;    &#x9;CVE-2012-3489&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-3489&#xa;    &#x9;CVE-2012-2655&#x9;4.0&#x9;https://vulners.com/cve/CVE-2012-2655&#xa;    &#x9;CVE-2009-3229&#x9;4.0&#x9;https://vulners.com/cve/CVE-2009-3229&#xa;    &#x9;SSV:19322&#x9;3.5&#x9;https://vulners.com/seebug/SSV:19322&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:127092&#x9;3.5&#x9;https://vulners.com/packetstorm/PACKETSTORM:127092&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:33729&#x9;3.5&#x9;https://vulners.com/exploitdb/EDB-ID:33729&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2010-0733&#x9;3.5&#x9;https://vulners.com/cve/CVE-2010-0733&#xa;    &#x9;MSF:AUXILIARY/ADMIN/POSTGRES/POSTGRES_SQL&#x9;0.0&#x9;https://vulners.com/metasploit/MSF:AUXILIARY/ADMIN/POSTGRES/POSTGRES_SQL&#x9;*EXPLOIT*"><table key="cpe:/a:postgresql:postgresql:8.3">
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60718</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1903</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1902</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">8.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:30015</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">8.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:19652</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">8.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2013-1900</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">8.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2010-1169</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">8.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-1447</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">8.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-1169</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:30152</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2013-0255</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2012-0868</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2009-3231</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-0255</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0868</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-3231</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:62083</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:61543</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:15153</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:15097</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:15095</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2014-0065</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2014-0064</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2014-0063</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2014-0061</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2012-0866</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2010-4015</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2009-4136</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2009-3230</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0065</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0064</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0063</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0061</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0866</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-4015</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2010-3433</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">6.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2010-1170</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">6.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-3433</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">6.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-1170</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:15154</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:15096</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2009-4034</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">5.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:19669</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">5.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2010-1975</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">5.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-1975</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.9</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:61546</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.9</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60334</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.9</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2014-0062</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">4.9</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2012-3488</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">4.9</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0062</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.9</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-3488</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.6</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:61544</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.6</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0067</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2012-2143</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2012-0867</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-2143</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:61547</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:61545</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60335</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:60186</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:4928</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2014-0066</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2014-0060</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2012-3489</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2012-2655</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2009-3229</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">POSTGRESQL:CVE-2009-0922</elem>
+<elem key="type">postgresql</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:32849</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0066</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0060</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-3489</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-2655</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-3229</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">3.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">SSV:19322</elem>
+<elem key="type">seebug</elem>
+</table>
+<table>
+<elem key="cvss">3.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">PACKETSTORM:127092</elem>
+<elem key="type">packetstorm</elem>
+</table>
+<table>
+<elem key="cvss">3.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">EDB-ID:33729</elem>
+<elem key="type">exploitdb</elem>
+</table>
+<table>
+<elem key="cvss">3.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-0733</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="id">MSF:AUXILIARY/ADMIN/POSTGRES/POSTGRES_SQL</elem>
+<elem key="type">metasploit</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="5900"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="vnc" product="VNC" extrainfo="protocol 3.3" method="probed" conf="10"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="sslv2-drown" output="&#xa;"></script></port>
+<port protocol="tcp" portid="6000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="X11" extrainfo="access denied" method="probed" conf="10"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="6667"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="irc" product="UnrealIRCd" hostname="irc.Metasploitable.LAN" method="probed" conf="10"><cpe>cpe:/a:unrealircd:unrealircd</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="irc-unrealircd-backdoor" output="Looks like trojaned version of unrealircd. See http://seclists.org/fulldisclosure/2010/Jun/277"/></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ajp13" product="Apache Jserv" extrainfo="Protocol v1.3" method="probed" conf="10"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="8180"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache Tomcat/Coyote JSP engine" version="1.1" method="probed" conf="10"><cpe>cpe:/a:apache:coyote_http_connector:1.1</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-cookie-flags" output="&#xa;  /admin/: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/index.html: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/login.html: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/admin.html: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/account.html: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/admin_login.html: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/home.html: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/admin-login.html: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/adminLogin.html: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/controlpanel.html: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/cp.html: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/index.jsp: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/login.jsp: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/admin.jsp: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/home.jsp: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/controlpanel.jsp: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/admin-login.jsp: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/cp.jsp: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/account.jsp: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/admin_login.jsp: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/adminLogin.jsp: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/view/javascript/fckeditor/editor/filemanager/connectors/test.html: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/includes/FCKeditor/editor/filemanager/upload/test.html: &#xa;    JSESSIONID: &#xa;      httponly flag not set&#xa;  /admin/jscript/upload.html: &#xa;    JSESSIONID: &#xa;      httponly flag not set"><table key="/admin/">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/index.html">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/login.html">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/admin.html">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/account.html">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/admin_login.html">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/home.html">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/admin-login.html">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/adminLogin.html">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/controlpanel.html">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/cp.html">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/index.jsp">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/login.jsp">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/admin.jsp">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/home.jsp">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/controlpanel.jsp">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/admin-login.jsp">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/cp.jsp">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/account.jsp">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/admin_login.jsp">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/adminLogin.jsp">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/view/javascript/fckeditor/editor/filemanager/connectors/test.html">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/includes/FCKeditor/editor/filemanager/upload/test.html">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/admin/jscript/upload.html">
+<table key="JSESSIONID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+</script><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-enum" output="&#xa;  /admin/: Possible admin folder&#xa;  /admin/index.html: Possible admin folder&#xa;  /admin/login.html: Possible admin folder&#xa;  /admin/admin.html: Possible admin folder&#xa;  /admin/account.html: Possible admin folder&#xa;  /admin/admin_login.html: Possible admin folder&#xa;  /admin/home.html: Possible admin folder&#xa;  /admin/admin-login.html: Possible admin folder&#xa;  /admin/adminLogin.html: Possible admin folder&#xa;  /admin/controlpanel.html: Possible admin folder&#xa;  /admin/cp.html: Possible admin folder&#xa;  /admin/index.jsp: Possible admin folder&#xa;  /admin/login.jsp: Possible admin folder&#xa;  /admin/admin.jsp: Possible admin folder&#xa;  /admin/home.jsp: Possible admin folder&#xa;  /admin/controlpanel.jsp: Possible admin folder&#xa;  /admin/admin-login.jsp: Possible admin folder&#xa;  /admin/cp.jsp: Possible admin folder&#xa;  /admin/account.jsp: Possible admin folder&#xa;  /admin/admin_login.jsp: Possible admin folder&#xa;  /admin/adminLogin.jsp: Possible admin folder&#xa;  /manager/html/upload: Apache Tomcat (401 Unauthorized)&#xa;  /manager/html: Apache Tomcat (401 Unauthorized)&#xa;  /admin/view/javascript/fckeditor/editor/filemanager/connectors/test.html: OpenCart/FCKeditor File upload&#xa;  /admin/includes/FCKeditor/editor/filemanager/upload/test.html: ASP Simple Blog / FCKeditor File Upload&#xa;  /admin/jscript/upload.html: Lizard Cart/Remote File upload&#xa;  /webdav/: Potentially interesting folder&#xa;"/><script id="http-server-header" output="Apache-Coyote/1.1"><elem>Apache-Coyote/1.1</elem>
+</script><script id="http-slowloris-check" output="&#xa;  VULNERABLE:&#xa;  Slowloris DOS attack&#xa;    State: LIKELY VULNERABLE&#xa;    IDs:  CVE:CVE-2007-6750&#xa;      Slowloris tries to keep many connections to the target web server open and hold&#xa;      them open as long as possible.  It accomplishes this by opening connections to&#xa;      the target web server and sending a partial request. By doing so, it starves&#xa;      the http server&apos;s resources causing Denial Of Service.&#xa;      &#xa;    Disclosure date: 2009-09-17&#xa;    References:&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750&#xa;      http://ha.ckers.org/slowloris/&#xa;"><table key="CVE-2007-6750">
+<elem key="title">Slowloris DOS attack</elem>
+<elem key="state">LIKELY VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2007-6750</elem>
+</table>
+<table key="description">
+<elem>Slowloris tries to keep many connections to the target web server open and hold&#xa;them open as long as possible.  It accomplishes this by opening connections to&#xa;the target web server and sending a partial request. By doing so, it starves&#xa;the http server&apos;s resources causing Denial Of Service.&#xa;</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="day">17</elem>
+<elem key="month">09</elem>
+<elem key="year">2009</elem>
+</table>
+</table>
+<elem key="disclosure">2009-09-17</elem>
+<table key="exploit_results">
+</table>
+<table key="refs">
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750</elem>
+<elem>http://ha.ckers.org/slowloris/</elem>
+</table>
+</table>
+</script><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/></port>
+</ports>
+<hostscript><script id="smb-double-pulsar-backdoor" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-cve-2017-7494" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-ms06-025" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-ms07-029" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-ms08-067" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="false">false</script><script id="smb-vuln-ms17-010" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-regsvc-dos" output="ERROR: Script execution failed (use -d to debug)"/></hostscript><times srtt="4501" rttvar="89" to="100000"/>
+</host>
+<runstats><finished time="1612193867" timestr="Mon Feb  1 16:37:47 2021" elapsed="433.07" summary="Nmap done at Mon Feb  1 16:37:47 2021; 1 IP address (1 host up) scanned in 433.07 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

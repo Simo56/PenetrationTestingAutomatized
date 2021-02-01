@@ -12,24 +12,40 @@ public class PenetrationTestWrapper {
 	private InetAddress ip;
 	private String domain;
 
-	// constructor with only IP, default tools are: NMAP & METASPLOIT
+	/*** COSTRUTTORI PER NMAP CON VULNERS!!!!! ***/
+	/*
+	 * // constructor with only IP, default tools are: NMAP-VULNERS & METASPLOIT
+	 * public PenetrationTestWrapper(InetAddress ip) { // create the instances of
+	 * the objects that will be used in this automatized // penetration test this.ip
+	 * = ip; this.scanningModuleTool = new NMAPScanningToolVulnersScript();
+	 * this.exploitationModuleTool = new MetasploitExploitationTool();
+	 * 
+	 * }
+	 * 
+	 * // constructor with only DOMAIN, default tools are: NMAP-VULNERS & METASPLOIT
+	 * public PenetrationTestWrapper(String domain) { // create the instances of the
+	 * objects that will be used in this automatized // penetration test this.domain
+	 * = domain; this.scanningModuleTool = new NMAPScanningToolVulnersScript();
+	 * this.exploitationModuleTool = new MetasploitExploitationTool(); }
+	 */
+
+	// constructor with only IP, default tools are: NMAP-VULN & METASPLOIT
 	public PenetrationTestWrapper(InetAddress ip) {
 		// create the instances of the objects that will be used in this automatized
 		// penetration test
 		this.ip = ip;
-		this.scanningModuleTool = new nmapScanningTool();
+		this.scanningModuleTool = new NMAPScanningToolVulnScript();
 		this.exploitationModuleTool = new MetasploitExploitationTool();
 
 	}
 
-	// constructor with only DOMAIN, default tools are: NMAP & METASPLOIT
+	// constructor with only DOMAIN, default tools are: NMAP-VULN & METASPLOIT
 	public PenetrationTestWrapper(String domain) {
 		// create the instances of the objects that will be used in this automatized
 		// penetration test
 		this.domain = domain;
-		this.scanningModuleTool = new nmapScanningTool();
+		this.scanningModuleTool = new NMAPScanningToolVulnScript();
 		this.exploitationModuleTool = new MetasploitExploitationTool();
-
 	}
 
 	/*
@@ -47,9 +63,8 @@ public class PenetrationTestWrapper {
 
 		if (!exploitsList.isEmpty()) {
 			// vulnerabilities found!
-			this.exploitationModuleTool.searchAndExploit(exploitsList,this.ip);
-						
-			// TODO sfrutta le vulnerabilita trovate
+			this.exploitationModuleTool.searchAndExploit(exploitsList, this.ip);
+
 		} else {
 			// if no vulnerabilities has been found
 			System.err.println("Vulnerabilities not found!... \\nclosing...");
@@ -64,9 +79,9 @@ public class PenetrationTestWrapper {
 
 		if (!exploitsList.isEmpty()) {
 			// vulnerabilities found!
-			this.exploitationModuleTool.searchAndExploit(exploitsList,InetAddress.getByName(new URL(this.domain).getHost()));
-			
-			// TODO sfrutta le vulnerabilita trovate
+			this.exploitationModuleTool.searchAndExploit(exploitsList,
+					InetAddress.getByName(new URL(this.domain).getHost()));
+
 		} else {
 			// if no vulnerabilities has been found...
 			System.err.println("Vulnerabilities not found!... \\nclosing...");

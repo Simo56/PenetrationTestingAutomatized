@@ -14,10 +14,17 @@ public class AutomatizedPenetrationTestingScript {
 	//protected because other classes needs to see this variable to save their files
 	protected static Path currentTestPath;
 	
-	//TODO far funzionare anche se trasformo in jar questo progetto... (problema con script dentro al progetto)
+	protected static String exploitationFrameworkName;
+	protected static String scanningFrameworkName;
+
 	public static void main(String[] args) {
 		//Create the folder in which i will save all the other files
 		String currentTestName = createPenetrationTestFolder();
+		
+		//TODO choose scanning tool
+		//int scanningTool = chooseScanningTool();
+		//TODO choose exploitation tool
+		//int exploitationTool = chooseExploitationTool();
 		
 		//choose if it's an IP based or Domain based penetration test
 		int atkType = chooseAtkType();
@@ -43,7 +50,7 @@ public class AutomatizedPenetrationTestingScript {
 			
 			try {
 				ptw.runWithDomain();
-			} catch (UnknownHostException | MalformedURLException e) {
+			} catch (Exception e) {
 				if(e instanceof UnknownHostException) System.err.println("UnknownHostException ERROR DURING EXECUTION OF THE SUBPROCESS");
 				if(e instanceof MalformedURLException) System.err.println("MalformedURLException ERROR DURING EXECUTION OF THE SUBPROCESS");
 				e.printStackTrace();
@@ -57,12 +64,6 @@ public class AutomatizedPenetrationTestingScript {
 			System.exit(-1);				
 		}
 	}
-	
-	/*** END MAIN ***/
-	
-	
-	
-	
 	
 	private static int chooseAtkType() {
 		System.out.println("Do you want to attack an IP or a Domain?\n1)IP\n2)Domain\n0)Exit");
