@@ -13,13 +13,10 @@ import java.nio.file.Paths;
 public class AutomatizedPenetrationTestingScript {
 	//protected because other classes needs to see this variable to save their files
 	protected static Path currentTestPath;
-	
-	protected static String exploitationFrameworkName;
-	protected static String scanningFrameworkName;
 
 	public static void main(String[] args) {
 		//Create the folder in which i will save all the other files
-		String currentTestName = createPenetrationTestFolder();
+		createPenetrationTestFolder();
 		
 		//TODO choose scanning tool
 		//int scanningTool = chooseScanningTool();
@@ -32,22 +29,17 @@ public class AutomatizedPenetrationTestingScript {
 		PenetrationTestWrapper ptw;
 		
 		switch(atkType) {
+		case 0:
+			System.exit(0);
+			break;
 		case 1:
 			//ip based
-			ptw = ipBasedPTWIstance();
-			
-			//actual path of the penetration test
-			currentTestPath = Paths.get(System.getProperty("user.dir"), "PenetrationTestSaved", currentTestName.replaceAll("[^a-zA-Z0-9.-]", ""));
-			
+			ptw = ipBasedPTWIstance();			
 			ptw.runWithIP();
 			break;
 		case 2:
 			//domain based
-			ptw = domainBasedPTWIstance();
-			
-			//actual path of the penetration test
-			currentTestPath = Paths.get(System.getProperty("user.dir"), "PenetrationTestSaved", currentTestName.replaceAll("[^a-zA-Z0-9.-]", ""));
-			
+			ptw = domainBasedPTWIstance();	
 			try {
 				ptw.runWithDomain();
 			} catch (Exception e) {
@@ -55,9 +47,6 @@ public class AutomatizedPenetrationTestingScript {
 				if(e instanceof MalformedURLException) System.err.println("MalformedURLException ERROR DURING EXECUTION OF THE SUBPROCESS");
 				e.printStackTrace();
 			}
-			break;
-		case 0:
-			System.exit(0);
 			break;
 		default:
 			//error, exit
@@ -75,7 +64,7 @@ public class AutomatizedPenetrationTestingScript {
 			if(e instanceof IOException) System.out.println("INPUT ERROR");
 			e.printStackTrace();
 		}
-		return target;
+		return target.intValue();
 	}
 	
 	
@@ -94,27 +83,26 @@ public class AutomatizedPenetrationTestingScript {
 	}
 
 	private static PenetrationTestWrapper domainBasedPTWIstance() {
-		String dominio = "";
+		String domain = "";
 		try {
 			System.out.println("Enter the Domain: ");
-			dominio = new BufferedReader(new InputStreamReader(System.in)).readLine();
+			domain = new BufferedReader(new InputStreamReader(System.in)).readLine();
 		} catch (IOException e) {
 			System.err.println("ERROR WHILE ENTERING THE DOMAIN");
 			e.printStackTrace();
 		}
 		//create and return the object that will handle my automatized penetration test
-		return new PenetrationTestWrapper(dominio);		
+		return new PenetrationTestWrapper(domain);		
 	}
 
 	
 	
 	public static String createPenetrationTestFolder() {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		Path path;
 		
 		//get the directory in which the script has been executed for creating the folders
 		//in which I will save all the files
-		path = Paths.get(System.getProperty("user.dir"));
+		Path path = Paths.get(System.getProperty("user.dir"));
 
 		String currentTestName = "";
 
@@ -140,6 +128,9 @@ public class AutomatizedPenetrationTestingScript {
 		}
 		
 		System.out.println("Folder created in this path: " + path.toString());
+		
+		//actual path of the penetration test
+		currentTestPath = path;
 		
 		return currentTestName;
 	}

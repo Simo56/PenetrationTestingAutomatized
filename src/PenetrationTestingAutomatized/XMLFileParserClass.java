@@ -115,7 +115,7 @@ public class XMLFileParserClass {
 				if (exploit.contains("https://github.com/rapid7/metasploit-framework")) {
 					exploit = exploit.replace("https://github.com/rapid7/metasploit-framework/blob/master/modules/", "").toLowerCase();
 					exploit = exploit.replace(".rb", "");
-					System.out.println("QUESTO È L'EXPLOIT STRING CHE VERRÀ AGGIUNTO: "+exploit);
+					//System.out.println("QUESTO È L'EXPLOIT STRING CHE VERRÀ AGGIUNTO: "+exploit);
 					MetasploitCompatibleExploits.add(exploit);
 					
 				}

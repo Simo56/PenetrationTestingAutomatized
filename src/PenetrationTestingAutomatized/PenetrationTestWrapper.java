@@ -12,6 +12,40 @@ public class PenetrationTestWrapper {
 	private InetAddress ip;
 	private String domain;
 
+	// constructor with only DOMAIN, default tools are: NMAP-VULN & METASPLOIT
+	public PenetrationTestWrapper(String domain) {
+		// create the instances of the objects that will be used in this automatized
+		// penetration test
+		this.domain = domain;
+		this.scanningModuleTool = new NMAPScanningToolVulnScript();
+		this.exploitationModuleTool = new MetasploitExploitationTool();
+	}
+
+	// constructor with only IP, default tools are: NMAP-VULN & METASPLOIT
+	public PenetrationTestWrapper(InetAddress ip) {
+		// create the instances of the objects that will be used in this automatized
+		// penetration test
+		this.ip = ip;
+		this.scanningModuleTool = new NMAPScanningToolVulnScript();
+		this.exploitationModuleTool = new MetasploitExploitationTool();
+	}
+
+	/*
+	 * TODO costruttore con parametri per decidere tool di scansione e exploit
+	 * public PenetrationTestWrapper(InetAddress ip, String scanningToolName, String
+	 * exploitationToolName) {
+	 * 
+	 * }
+	 */
+
+	/***
+	 * TODO COSTRUTTORE CON PARAMETRI PER DECIDERE I TOOL DI SCANSIONE E EXPLOIT
+	 ***/
+	/*
+	 * public PenetrationTestWrapper(InetAddress ip, String scanningToolName, String
+	 * exploitationToolName) {}
+	 */
+
 	/*** COSTRUTTORI PER NMAP CON VULNERS!!!!! ***/
 	/*
 	 * // constructor with only IP, default tools are: NMAP-VULNERS & METASPLOIT
@@ -27,33 +61,6 @@ public class PenetrationTestWrapper {
 	 * objects that will be used in this automatized // penetration test this.domain
 	 * = domain; this.scanningModuleTool = new NMAPScanningToolVulnersScript();
 	 * this.exploitationModuleTool = new MetasploitExploitationTool(); }
-	 */
-
-	// constructor with only IP, default tools are: NMAP-VULN & METASPLOIT
-	public PenetrationTestWrapper(InetAddress ip) {
-		// create the instances of the objects that will be used in this automatized
-		// penetration test
-		this.ip = ip;
-		this.scanningModuleTool = new NMAPScanningToolVulnScript();
-		this.exploitationModuleTool = new MetasploitExploitationTool();
-
-	}
-
-	// constructor with only DOMAIN, default tools are: NMAP-VULN & METASPLOIT
-	public PenetrationTestWrapper(String domain) {
-		// create the instances of the objects that will be used in this automatized
-		// penetration test
-		this.domain = domain;
-		this.scanningModuleTool = new NMAPScanningToolVulnScript();
-		this.exploitationModuleTool = new MetasploitExploitationTool();
-	}
-
-	/*
-	 * TODO costruttore con parametri per decidere tool di scansione e exploit
-	 * public PenetrationTestWrapper(InetAddress ip, String scanningToolName, String
-	 * exploitationToolName) {
-	 * 
-	 * }
 	 */
 
 	public void runWithIP() {
