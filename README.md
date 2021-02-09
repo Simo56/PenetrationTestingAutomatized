@@ -23,7 +23,7 @@ You need to have installed and linked on the PATH system variable at least one o
 -metasploit (check that you have initialized your DB, run "msfdb init")
 
 ## Documentation
-
+To use it, download metasploitable2 and try it by using the correct ip address.
 
 ## Usage
 
