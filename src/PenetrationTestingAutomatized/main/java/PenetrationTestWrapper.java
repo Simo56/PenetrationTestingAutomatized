@@ -1,4 +1,4 @@
-package PenetrationTestingAutomatized;
+package PenetrationTestingAutomatized.main.java;
 
 import java.net.InetAddress;
 import java.net.MalformedURLException;

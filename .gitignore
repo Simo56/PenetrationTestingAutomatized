@@ -1,0 +1,53 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Bytecode
+*.jar
+*.war
+*.ear
+
+# Compiled Java source files
+/target/
+/classes/
+/bin/
+/*.swp
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+*.db
+
+# Eclipse-specific
+bin/
+.settings/
+.project
+.classpath
+
+# NetBeans-specific
+nbproject/private/
+build/
+
+# IntelliJ IDEA-specific
+.idea/
+
+# Maven-specific
+/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle-specific
+.gradle/
+build/

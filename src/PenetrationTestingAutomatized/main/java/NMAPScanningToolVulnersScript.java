@@ -1,37 +1,38 @@
-package PenetrationTestingAutomatized;
+package PenetrationTestingAutomatized.main.java;
 
 import java.io.IOException;
 import java.net.InetAddress;
 import java.util.List;
 
-public class NMAPScanningToolVulnScript implements ScanningModule {
+public class NMAPScanningToolVulnersScript implements ScanningModule {
 	// object for handling the subprocesses, in this case NMAP
 	private ProcessBuilder process;
 
-	public NMAPScanningToolVulnScript() {
+	public NMAPScanningToolVulnersScript() {
 		this.process = new ProcessBuilder();
 	}
 
 	@Override
 	public void scanIP(InetAddress ip) {
 		// adjust directory to the right one identified by the currentTestPath var
-		this.process.directory(AutomatizedPenetrationTestingScript.currentTestPath.toFile());
+		this.process.directory(AutomatizedPenetrationTestingMain.currentTestPath.toFile());
 		// scan and find CVE
-		// nmap -A -Pn -sV --script vuln -oX
+		// nmap -A -Pn -sV --script vulners -oX
 		// /PENETRATION_TEST_SALVATI/CURRENT_TEST_NAME/NmapScanOutputCVE.xml -sV -sC IP
-		process.command("nmap", "-sV", "-A", "--script", "vuln", "-oX", "NmapScanOutputCVE.xml", ip.getHostAddress())
-				.inheritIO();
+		process.command("nmap", "-sV", "-A", "-Pn", "-sV", "--script", "vulners", "-oX", "NmapScanOutputCVE.xml",
+				ip.getHostAddress()).inheritIO();
 	}
 
 	@Override
 	public void scanDomain(String domain) {
 		// adjust directory to the right one identified by the currentTestPath var
-		this.process.directory(AutomatizedPenetrationTestingScript.currentTestPath.toFile());
+		this.process.directory(AutomatizedPenetrationTestingMain.currentTestPath.toFile());
 		// scan and find CVE
-		// nmap -Pn -sV --script vuln -oX
+		// nmap -Pn -sV --script vulners -oX
 		// /PENETRATION_TEST_SALVATI/CURRENT_TEST_NAME/NmapScanOutputCVE.xml -sV -sC
 		// DOMAIN
-		process.command("nmap", "-A", "-sV", "--script", "vuln", "-oX", "NmapScanOutputCVE.xml", domain).inheritIO();
+		process.command("nmap", "-sV", "-A", "-Pn", "-sV", "--script", "vulners", "-oX", "NmapScanOutputCVE.xml",
+				domain).inheritIO();
 	}
 
 	@Override
@@ -42,7 +43,7 @@ public class NMAPScanningToolVulnScript implements ScanningModule {
 			this.process.start().waitFor();
 
 			// create the String list for the CVEs
-			return XMLFileParserClass.nmapVulnExtrapolateExploitablesVulnerabilitiesFromXML();
+			return XMLFileParserClass.nmapVulnersExtrapolateExploitablesVulnerabilitiesFromXML();
 		} catch (Exception e) {
 			if (e instanceof IOException)
 				System.err.println("I/O ERROR DURING EXECUTION OF THE SUBPROCESS");

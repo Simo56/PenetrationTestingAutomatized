@@ -1,4 +1,4 @@
-package PenetrationTestingAutomatized;
+package PenetrationTestingAutomatized.main.java;
 
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -30,7 +30,7 @@ public class XMLFileParserClass {
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			try {
 				nmapOutputXML = builder
-						.parse(Paths.get(AutomatizedPenetrationTestingScript.currentTestPath.toRealPath().toString(),
+						.parse(Paths.get(AutomatizedPenetrationTestingMain.currentTestPath.toRealPath().toString(),
 								"NmapScanOutputCVE.xml").toString());
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
@@ -86,7 +86,7 @@ public class XMLFileParserClass {
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			try {
 				nmapOutputXML = builder
-						.parse(Paths.get(AutomatizedPenetrationTestingScript.currentTestPath.toRealPath().toString(),
+						.parse(Paths.get(AutomatizedPenetrationTestingMain.currentTestPath.toRealPath().toString(),
 								"NmapScanOutputCVE.xml").toString());
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
@@ -113,13 +113,14 @@ public class XMLFileParserClass {
 			MetasploitCompatibleExploits = new ArrayList<String>();
 			for (String exploit : exploitsList) {
 				if (exploit.contains("https://github.com/rapid7/metasploit-framework")) {
-					exploit = exploit.replace("https://github.com/rapid7/metasploit-framework/blob/master/modules/", "").toLowerCase();
+					exploit = exploit.replace("https://github.com/rapid7/metasploit-framework/blob/master/modules/", "")
+							.toLowerCase();
 					exploit = exploit.replace(".rb", "");
-					//System.out.println("QUESTO È L'EXPLOIT STRING CHE VERRÀ AGGIUNTO: "+exploit);
+					// System.out.println("QUESTO È L'EXPLOIT STRING CHE VERRÀ AGGIUNTO: "+exploit);
 					MetasploitCompatibleExploits.add(exploit);
-					
+
 				}
-					
+
 			}
 
 		} catch (ParserConfigurationException | XPathExpressionException e) {
